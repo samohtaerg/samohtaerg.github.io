@@ -77,7 +77,9 @@ Activities and Leadership
 Awards and Honors
 ======
 * NYU GPH Biostatistics Master's Thesis Award, 2024  
-* Top 20, Harvard-MIT Mathematics Tournament (HMMT), 2016  
-* Third Prize, Mathematical Contest in Modeling (MCM), 2016  
+* Top 20, Harvard-MIT Mathematics Tournament (HMMT), 2016
+* Top 3, ASDAN Math Tournament in (AMT), 2015
+* Third Prize, Mathematical Contest in Modeling (MCM), 2016
+* Second Prize, High School Mathematical Contest in Modeling (HiMCM),
 
 ---

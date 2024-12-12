@@ -1,12 +1,12 @@
 ---
 permalink: /
-title: "Aoran Chen"
+title: "Short Bio"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-Hello, I’m Aoran Chen, and my friends call me Thomas.  
+Hello, I’m Aoran Chen; my friends call me Thomas.  
 
 I got my Bachelor’s degree in Mathematics from the University of Minnesota Twin Cities, where I was advised by Prof. Max Engelstein. I then earned my Master’s degree in Biostatistics at NYU GPH, advised by Prof. Yang Feng.  
 
@@ -35,6 +35,6 @@ I sometimes blog/write about topics that catch my interest, like the geometry of
 
 In my free time, I make music across genres, from fugues to dark synth and melodic dubstep. I also love modding games like Skyrim, Cyberpunk 2077, and Overwatch. Right now, I’m training in boxing; the goal is to compete in The Golden Gloves by 2026. 
 
-When it comes to reading, my favorite writers are Hegel, Žižek, Merleau-Ponty, and Lacan. I’m currently reading Hegel’s *The Philosophy of History* and *Lectures on the History of Philosophy*.
+When it comes to reading, my favorites are Hegel, Žižek, Merleau-Ponty, Deleuze, Lacan, Eros, etc. I’m currently working through Hegel’s *The Philosophy of History* and *Lectures on the History of Philosophy*.
 
 

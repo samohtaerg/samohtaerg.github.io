@@ -52,31 +52,54 @@ I focus on two core questions:
 - Development of robust decision-making systems for biostatistics
 - Handling of dynamic environments and heterogeneous populations
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+## Publications and Preprints
 
-{% include base_path %}
+1. **Geometric Multi-Task Learning on the Stiefel Manifold: Geometry-Aware Representations**  
+  *Manuscript in Preparation*  
+  [Link](https://samohtaerg.github.io/my-links/)
 
-<!-- New style rendering if publication categories are defined -->
+2. **A Variational Approach to the Yamabe Problem: Conformal Transformations and Scalar Curvature on Compact Riemannian Manifolds**  
+  Chen, Aoran  
+  arXiv:2309.02397, 2023  
+  [PDF](https://arxiv.org/abs/2309.02397)
+
+3. **Ant Colony Optimization Algorithm and its Application**  
+  Chen, Aoran, Hao Tan, and Yiyue Zhu  
+  2nd International Conference on Applied Mathematics, Modeling, and Intelligent Computing (CAMMIC 2022)  
+  Vol. 12259. SPIE, 2022
+
+## Talks and Presentations
+
+- (2024) **Geometric Optimization of Multi-task Learning on the Stiefel Manifold**  
+ Student Research Symposium, New York University
+
+- (2021-2022) **Topics in Algebraic Geometry: Bézout's Theorem From Projective Varieties to Modern Applications**  
+ Mathematics Project at Minnesota (MPM), University of Minnesota--Twin Cities
+
+- (2020-2021) **Combinatorial Phase Transitions: Ramsey's Theorem and the Structure of Large Systems**  
+ Mathematics Project at Minnesota (MPM), University of Minnesota--Twin Cities
+
+- (2020) **Tessellations of the Hyperbolic Plane: Poincaré's Disk**  
+ Seminar of Geometry I, University of Minnesota
+
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
+ {% for category in site.publication_category %}
+   {% assign title_shown = false %}
+   {% for post in site.publications reversed %}
+     {% if post.category != category[0] %}
+       {% continue %}
+     {% endif %}
+     {% unless title_shown %}
+       <h2>{{ category[1].title }}</h2><hr />
+       {% assign title_shown = true %}
+     {% endunless %}
+     {% include archive-single.html %}
+   {% endfor %}
+ {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+ {% for post in site.publications reversed %}
+   {% include archive-single.html %}
+ {% endfor %}
 {% endif %}
 
 

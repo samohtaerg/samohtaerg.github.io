@@ -2,9 +2,6 @@
 redirect_from:
   - /2012/08/14/blog-post-1/
 ---
-
-# Variational Principles and Riemannian Geometry: A Hidden Connection in Classical Mechanics
-
 Riemannian geometry in general relativity? Sure, you've heard about that. It's the rockstar of mathematical physics, weaving together gravity and spacetime. But let me tell you a secret: Riemannian geometry isn't just the darling of general relativity—it’s lurking quietly in classical mechanics, too. Yes, Newton’s good ol’ mechanics has Riemannian geometry in its DNA. Let’s unpack this and see how it works.
 
 ---

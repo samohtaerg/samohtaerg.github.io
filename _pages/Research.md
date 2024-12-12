@@ -29,7 +29,7 @@ I focus on two core questions:
 #### 3. Hybrid Modeling for Interpretable Machine Learning
 - Design hybrid frameworks combining structured models (e.g., survival models or epidemiological models) with machine learning to enhance prediction accuracy while maintaining transparency in biostatistical applications.
 
-### Broader Research Interests
+### Other Research Interests
 
 #### Data Scarcity and Privacy-Aware Learning
 - Develop domain-informed models that integrate biological insights and leverage privacy-preserving techniques, like federated learning, to effectively learn from limited and sensitive biomedical data.

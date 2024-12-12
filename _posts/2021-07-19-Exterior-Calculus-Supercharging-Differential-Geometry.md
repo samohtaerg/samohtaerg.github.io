@@ -10,7 +10,6 @@ tags:
 
 
 ### **Why Learn Exterior Calculus?**
-
 If you’re diving into Riemannian geometry, you’ve likely experienced its two sides. Geometrically, it’s elegant and intuitive. But when it comes to computations, you’re often swimming through a sea of indices—summing over components, juggling transformations, and keeping track of symmetry properties.
 
 Enter **exterior calculus**. It reimagines geometry using antisymmetric operations like the wedge product. By treating $$dx^\mu$$as the basis for differential forms, we unlock powerful tools that combine differentiation, integration, and algebra in one framework. 

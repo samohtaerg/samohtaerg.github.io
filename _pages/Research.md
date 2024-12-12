@@ -1,9 +1,11 @@
 ---
 layout: archive
-title: "Publications"
-permalink: /publications/
+title: "Research"
+permalink: /Research/
 author_profile: true
 ---
+
+{% include base_path %}
 
 # Research
 Embracing John Tukey's perspective that "an approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem," my research aims to develop theoretical frameworks that not only provide deep insights but also demonstrate practical utility on large-scale datasets.

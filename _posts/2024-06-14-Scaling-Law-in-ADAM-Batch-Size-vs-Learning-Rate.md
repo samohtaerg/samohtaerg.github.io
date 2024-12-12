@@ -16,15 +16,11 @@ Intuitively, when the batch size increases, the gradient of each batch becomes m
 
 The earliest answer to this question might be square root scaling. Specifically, if the batch size is increased by a factor of $n$, then the learning rate should be increased by $\sqrt{n}$. This concept originates from the 2014 paper "One Weird Trick for Parallelizing Convolutional Neural Networks." The derivation principle is to keep the variance of the SGD increments unchanged. Specifically, let the gradient of a randomly sampled single example be denoted as $\tilde{g}$, with its mean and covariance represented as $g$ and $\Sigma$, respectively. Here, $g$ is the gradient of all samples. When the sample size increases to $B$, we have:
 
-$$
-\tilde{g}_B \coloneqq \frac{1}{B} \sum_{i=1}^B \tilde{g}^{(i)}, \quad \mathbb{E}[\tilde{g}_B] = g, \quad \mathbb{E}\left[(\tilde{g}_B - g)(\tilde{g}_B - g)^\top\right] = \frac{\Sigma}{B}
-$$
+$$\tilde{g}_B \coloneqq \frac{1}{B} \sum_{i=1}^B \tilde{g}^{(i)}, \quad \mathbb{E}[\tilde{g}_B] = g, \quad \mathbb{E}\left[(\tilde{g}_B - g)(\tilde{g}_B - g)^\top\right] = \frac{\Sigma}{B}$$
 
 This means that increasing the sample size does not change the mean but reduces the covariance to $\frac{\Sigma}{B}$. For the SGD optimizer, the increment is $-\eta \tilde{g}_B$, whose covariance is proportional to $$\frac{\eta^2}{B}$$. Since a moderate amount of noise is necessary for the optimization process, when the batch size $B$ changes, we adjust the learning rate $\eta$ to keep the noise intensity (i.e., the covariance matrix) constant. This leads to:
 
-$$
-\eta^2 B = \text{constant} \quad \Rightarrow \quad \eta \propto \sqrt{B}
-$$
+$$\eta^2 B = \text{constant} \quad \Rightarrow \quad \eta \propto \sqrt{B}$$
 
 This establishes the square root scaling law between the learning rate and batch size. The later paper "Train Longer, Generalize Better: Closing the Generalization Gap in Large Batch Training of Neural Networks" also supports this choice.
 
@@ -36,21 +32,15 @@ To some extent, linear scaling aligns more closely with our intuitive understand
 
 In hindsight, establishing this connection is not difficult to understand. Let the model parameters be $\theta$. The SGD update rule can be rewritten as:
 
-$$
-\theta_{t+1} = \theta_t - \eta \tilde{g}_t^B = \theta_t - \eta g_t - \eta (\tilde{g}_t^B - g_t)
-$$
+$$\theta_{t+1} = \theta_t - \eta \tilde{g}_t^B = \theta_t - \eta g_t - \eta (\tilde{g}_t^B - g_t)$$
 
 Here, $\tilde{g}_t^B - g_t$ represents the gradient noise. So far, we have made no assumptions about the distribution of this noise, only that its mean is 0 and its covariance is $\frac{\Sigma_t}{B}$. Next, we assume that this noise follows a normal distribution $\mathcal{N}(0, \frac{\Sigma_t}{B})$, allowing us to further rewrite the iteration as:
 
-$$
-\theta_{t+1} = \theta_t - \eta g_t - \eta \Sigma_t^{1/2} B^{-1/2} z, \quad z \sim \mathcal{N}(0, I)
-$$
+$$\theta_{t+1} = \theta_t - \eta g_t - \eta \Sigma_t^{1/2} B^{-1/2} z, \quad z \sim \mathcal{N}(0, I)$$
 
 This implies that the SGD iteration $\theta_{t+1} = \theta_t - \eta \tilde{g}_t^B$ is approximately solving the SDE:
 
-$$
-d\theta = -g_t dt - \eta \Sigma_t^{1/2} B^{-1/2} dw
-$$
+$$d\theta = -g_t dt - \eta \Sigma_t^{1/2} B^{-1/2} dw$$
 
 Therefore, to ensure that the runtime results remain consistent when $B$ changes, the form of the above SDE should remain unchanged. This leads to linear scaling $\eta \propto B$. The critical step in this process is that the noise term's step size is the square root of the non-noise term, allowing us to separate out a factor of $\sqrt{\eta}$.
 
@@ -64,21 +54,15 @@ A classic work from OpenAI on this perspective is "An Empirical Model of Large-B
 
 The key idea in the entire derivation process is to treat the learning rate as an optimization parameter. Let the loss function be $L(\theta)$, and the current batch's gradient be $\tilde{g}^B$. Then, after an SGD step, the loss function becomes $L(\theta - \eta \tilde{g}^B)$. We treat the optimization of the optimal learning rate as the following problem:
 
-$$
-\eta^* = \arg\min_\eta \mathbb{E}[L(\theta - \eta \tilde{g}^B)]
-$$
+$$\eta^* = \arg\min_\eta \mathbb{E}[L(\theta - \eta \tilde{g}^B)]$$
 
 This objective is intuitive: choose the learning rate that maximizes training efficiency on average (i.e., minimizes the loss function as quickly as possible). To solve this problem, we approximate the loss function to the second order:
 
-$$
-L(\theta - \eta \tilde{g}^B) \approx L(\theta) - \eta \tilde{g}^B^\top \frac{\partial L(\theta)}{\partial \theta} + \frac{1}{2} \eta^2 \tilde{g}^B^\top \frac{\partial^2 L(\theta)}{\partial \theta^2} \tilde{g}^B \coloneqq H\tilde{g}^B = L(\theta) - \eta \tilde{g}^B^\top g + \frac{1}{2} \eta^2 \tilde{g}^B^\top H \tilde{g}^B
-$$
+$$L(\theta - \eta \tilde{g}^B) \approx L(\theta) - \eta \tilde{g}^B^\top \frac{\partial L(\theta)}{\partial \theta} + \frac{1}{2} \eta^2 \tilde{g}^B^\top \frac{\partial^2 L(\theta)}{\partial \theta^2} \tilde{g}^B \coloneqq H\tilde{g}^B = L(\theta) - \eta \tilde{g}^B^\top g + \frac{1}{2} \eta^2 \tilde{g}^B^\top H \tilde{g}^B$$
 
 Here, $H$ is the Hessian matrix, and $\frac{\partial L(\theta)}{\partial \theta}$ is the gradient of the loss function. Ideally, the gradient is based on all samples, which is why its mean is $g$. Taking the expectation, we get:
 
-$$
-\mathbb{E}[L(\theta - \eta \tilde{g}^B)] \approx \mathbb{E}\left[L(\theta) - \eta \tilde{g}^B^\top g + \frac{1}{2} \eta^2 \tilde{g}^B^\top H \tilde{g}^B\right] = L(\theta) - \eta g^\top g + \frac{1}{2} \eta^2 \mathbb{E}[\tilde{g}^B^\top H \tilde{g}^B]
-$$
+$$\mathbb{E}[L(\theta - \eta \tilde{g}^B)] \approx \mathbb{E}\left[L(\theta) - \eta \tilde{g}^B^\top g + \frac{1}{2} \eta^2 \tilde{g}^B^\top H \tilde{g}^B\right] = L(\theta) - \eta g^\top g + \frac{1}{2} \eta^2 \mathbb{E}[\tilde{g}^B^\top H \tilde{g}^B]$$
 
 The last term requires some manipulation:
 

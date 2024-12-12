@@ -66,9 +66,7 @@ $$\mathbb{E}[L(\theta - \eta \tilde{g}^B)] \approx \mathbb{E}\left[L(\theta) - \
 
 The last term requires some manipulation:
 
-$$
-\mathbb{E}[\tilde{g}^B^\top H \tilde{g}^B] = \mathbb{E}[\text{Tr}(\tilde{g}^B^\top H \tilde{g}^B)] = \mathbb{E}[\text{Tr}(\tilde{g}^B \tilde{g}^B^\top H)] = \text{Tr}\left(\mathbb{E}[\tilde{g}^B \tilde{g}^B^\top] H\right) = \text{Tr}\left((gg^\top + \frac{\Sigma}{B}) H\right)
-$$
+$$\mathbb{E}[\tilde{g}^B^\top H \tilde{g}^B] = \mathbb{E}[\text{Tr}(\tilde{g}^B^\top H \tilde{g}^B)] = \mathbb{E}[\text{Tr}(\tilde{g}^B \tilde{g}^B^\top H)] = \text{Tr}\left(\mathbb{E}[\tilde{g}^B \tilde{g}^B^\top] H\right) = \text{Tr}\left((gg^\top + \frac{\Sigma}{B}) H\right)$$
 
 This transformation mainly uses the property $\text{Tr}(AB) = \text{Tr}(BA)$. Assuming that $H$ is positive definite, the problem becomes a quadratic function, and the optimal solution is easily obtained:
 

@@ -21,7 +21,7 @@ repository               : "samohtaerg/samohtaerg.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "photopiano.png"
   name             : "Aoran Chen"
   pronouns         : # example: "she/her"  
   bio              : "Machine Learning, High Dimensional Statistics"

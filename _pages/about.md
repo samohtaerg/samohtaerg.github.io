@@ -27,13 +27,13 @@ I focus on practical problems. My goal is to develop theories that not only prov
 
 **Keywords**: Machine Learning, Statistical Learning Theory, Deep Learning Theory, Nonparametric Methods, High-Dimensional Statistics, Image Processing (Medical Images), Biomedical Data
 
-More details in the section.
+More details in the Research section(#publications)
 
 Miscellaneous
 ======
 I sometimes blog/write about topics that catch my interest, like the geometry of physics—exploring the least action principle, path integrals, and variational approaches. I’ve also written about math concepts like p-adic modular forms and how tropical geometry ties into neural networks like ReLU. Recently, I’ve been working on reproducing GPT-2 from scratch, following Andrej Karpathy’s tutorials.
 
-In my free time, I make music across genres, from fugues to dark synth and melodic dubstep. I also love modding games like Skyrim, Cyberpunk 2077, and Overwatch. Right now, I’m training in boxing with the goal of stepping into the ring for The Golden Gloves by 2026.
+In my free time, I make music across genres, from fugues to dark synth and melodic dubstep. I also love modding games like Skyrim, Cyberpunk 2077, and Overwatch. Right now, I’m training in boxing; the goal is to compete in The Golden Gloves by 2026. 
 
 When it comes to reading, my favorite writers are Hegel, Žižek, Merleau-Ponty, and Lacan. I’m currently reading Hegel’s *The Philosophy of History* and *Lectures on the History of Philosophy*.
 

@@ -20,7 +20,7 @@ $$
 \tilde{g}_B \coloneqq \frac{1}{B} \sum_{i=1}^B \tilde{g}^{(i)}, \quad \mathbb{E}[\tilde{g}_B] = g, \quad \mathbb{E}\left[(\tilde{g}_B - g)(\tilde{g}_B - g)^\top\right] = \frac{\Sigma}{B}
 $$
 
-This means that increasing the sample size does not change the mean but reduces the covariance to $\frac{\Sigma}{B}$. For the SGD optimizer, the increment is $-\eta \tilde{g}_B$, whose covariance is proportional to $\frac{\eta^2}{B}$. Since a moderate amount of noise is necessary for the optimization process, when the batch size $B$ changes, we adjust the learning rate $\eta$ to keep the noise intensity (i.e., the covariance matrix) constant. This leads to:
+This means that increasing the sample size does not change the mean but reduces the covariance to $\frac{\Sigma}{B}$. For the SGD optimizer, the increment is $-\eta \tilde{g}_B$, whose covariance is proportional to $$\frac{\eta^2}{B}$$. Since a moderate amount of noise is necessary for the optimization process, when the batch size $B$ changes, we adjust the learning rate $\eta$ to keep the noise intensity (i.e., the covariance matrix) constant. This leads to:
 
 $$
 \eta^2 B = \text{constant} \quad \Rightarrow \quad \eta \propto \sqrt{B}

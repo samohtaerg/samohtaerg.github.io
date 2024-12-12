@@ -8,7 +8,6 @@ tags:
   - Exterior Calculus
 ---
 
-## **Understanding Riemannian Geometry: From Orthogonal Frames to Differential Forms**
 
 ---
 

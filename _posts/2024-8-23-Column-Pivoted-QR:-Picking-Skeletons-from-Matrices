@@ -1,3 +1,15 @@
+---
+title: 'Column-Pivoted QR: Picking Skeletons from Matrices'
+date: 2024-8-23
+permalink: /posts/2024/8/QR-Decomposition-Skeletons/
+tags:
+  - QR Decomposition
+  - Interpolative Decomposition
+  - Low-Rank Approximation
+  - Numerical Linear Algebra
+math: true
+---
+
 
 
 ### What Is ID?

@@ -59,14 +59,22 @@ I focus on two core questions:
 
 ## Talks and Presentations
 
-- (2024) **Geometric Optimization of Multi-task Learning on the Stiefel Manifold**  
- Student Research Symposium, New York University
+- **Geometric Optimization of Multi-task Learning on the Stiefel Manifold**  
+  *Student Research Symposium, New York University (2024)*
 
-- (2021-2022) **Topics in Algebraic Geometry: Bézout's Theorem From Projective Varieties to Modern Applications**  
- Mathematics Project at Minnesota (MPM), University of Minnesota--Twin Cities
+- **Topics in Algebraic Geometry: Bézout's Theorem From Projective Varieties to Modern Applications**  
+  *Mathematics Project at Minnesota (MPM), University of Minnesota--Twin Cities (2022)*
 
-- (2020-2021) **Combinatorial Phase Transitions: Ramsey's Theorem and the Structure of Large Systems**  
- Mathematics Project at Minnesota (MPM), University of Minnesota--Twin Cities
+- **Combinatorial Phase Transitions: Ramsey's Theorem and the Structure of Large Systems**  
+  *Mathematics Project at Minnesota (MPM), University of Minnesota--Twin Cities (2021)*
+  
+- **Compressed Sensing: Making the Most of Less Data**  
+  *Linear Programming and Optimization Seminar, UC Berkeley (2021)*
 
-- (2020) **Tessellations of the Hyperbolic Plane: Poincaré's Disk**  
- Seminar of Geometry I, University of Minnesota
+- **Spectral Methods and Functional Analysis: Transforming PDEs to ODEs**  
+  *Fourier and Harmonic Analysis Seminar, UC Berkeley (2021)*
+  
+- **Tessellations of the Hyperbolic Plane: Poincaré's Disk**  
+  *Seminar of Geometry I, University of Minnesota (2020)*
+
+

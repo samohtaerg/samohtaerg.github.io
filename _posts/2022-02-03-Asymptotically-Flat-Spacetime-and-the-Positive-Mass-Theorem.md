@@ -35,7 +35,7 @@ To define a total energy-momentum for an isolated system, we require the spaceti
 2. \( \partial_\rho h_{\mu\nu} = O(r^{-2}) \),
 3. \( \partial_\sigma \partial_\rho h_{\mu\nu} = O(r^{-3}) \).
 
-Here, $$ r = \sqrt{x^2 + y^2 + z^2} $$ denotes the radial coordinate in a Cartesian-like coordinate system. These conditions ensure that \( g_{\mu\nu} \) approaches the Minkowski metric \( \eta_{\mu\nu} \) at spatial infinity.
+Here, $$r = \sqrt{x^2 + y^2 + z^2}$$ denotes the radial coordinate in a Cartesian-like coordinate system. These conditions ensure that \( g_{\mu\nu} \) approaches the Minkowski metric \( \eta_{\mu\nu} \) at spatial infinity.
 
 The ADM mass \( M_{\text{ADM}} \) is defined using the spatial metric \( g_{ij} \) and its first derivatives on a spacelike hypersurface \( \Sigma \). Explicitly, in a coordinate system where \( \Sigma \) is defined by \( t = \text{const} \), we have:
 

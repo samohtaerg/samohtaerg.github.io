@@ -22,30 +22,20 @@ Consider two random vectors in $$n$$-dimensional space:
 2. A random vector $$\mathbf{x} = (x_1, x_2, \dots, x_n)$$, uniformly distributed on the $$n$$-dimensional unit sphere.
 
 The angle $$\theta$$ between these vectors is determined by:
-$$
-\cos\theta = \langle \mathbf{x}, \mathbf{y} \rangle = x_1.
-$$
+$$\cos\theta = \langle \mathbf{x}, \mathbf{y} \rangle = x_1.$$
 
 Hence, the angle $$\theta$$ directly corresponds to the spherical coordinate $$\phi_1$$ in the hyperspherical system:
-$$
-\theta = \arccos(x_1) = \phi_1.
-$$
+$$\theta = \arccos(x_1) = \phi_1.$$
 
 #### The Probability of an Angle $$\theta$$
 The probability that $$\phi_1 \leq \theta$$ is given by integrating over the $$n$$-dimensional hyperspherical surface:
-$$
-P_n(\phi_1 \leq \theta) = \frac{\int_0^{\theta} \sin^{n-2}(\phi_1) \, d\phi_1}{\int_0^{\pi} \sin^{n-2}(\phi_1) \, d\phi_1}.
-$$
+$$P_n(\phi_1 \leq \theta) = \frac{\int_0^{\theta} \sin^{n-2}(\phi_1) \, d\phi_1}{\int_0^{\pi} \sin^{n-2}(\phi_1) \, d\phi_1}.$$
 
 The normalization constant in the denominator is the total surface area of the $$(n-1)$$-dimensional unit sphere:
-$$
-\text{Surface Area} = \frac{2\pi^{n/2}}{\Gamma(n/2)}.
-$$
+$$\text{Surface Area} = \frac{2\pi^{n/2}}{\Gamma(n/2)}.$$
 
 Thus, the probability density function for $$\phi_1 = \theta$$ is:
-$$
-p_n(\theta) = \frac{\Gamma(n/2)}{\Gamma((n-1)/2)\sqrt{\pi}} \sin^{n-2}(\theta).
-$$
+$$p_n(\theta) = \frac{\Gamma(n/2)}{\Gamma((n-1)/2)\sqrt{\pi}} \sin^{n-2}(\theta).$$
 
 ---
 
@@ -57,23 +47,17 @@ $$
 
 #### Concentration in High Dimensions
 When $$n$$ becomes large, the factor $$\sin^{n-2}(\theta)$$ becomes sharply peaked around $$\theta = \pi/2$$ (90°). This is because:
-$$
-\sin^{n-2}(\theta) \to e^{-(n-2)(\theta - \pi/2)^2/2}, \quad \text{for } \theta \approx \pi/2.
-$$
+$$\sin^{n-2}(\theta) \to e^{-(n-2)(\theta - \pi/2)^2/2}, \quad \text{for } \theta \approx \pi/2.$$
 
 This behavior can be approximated using a Gaussian:
-$$
-p_n(\theta) \approx \frac{1}{\sqrt{2\pi / (n-2)}} e^{-(n-2)(\theta - \pi/2)^2 / 2}.
-$$
+$$p_n(\theta) \approx \frac{1}{\sqrt{2\pi / (n-2)}} e^{-(n-2)(\theta - \pi/2)^2 / 2}.$$
 
 ---
 
 ### 3. **Variance of the Angle**
 
 The variance of $$\theta$$ tells us how tightly the angles are clustered around $$\pi/2$$. For large $$n$$, the variance can be shown to approach:
-$$
-\text{Var}_n(\theta) \approx \frac{1}{n-2}.
-$$
+$$\text{Var}_n(\theta) \approx \frac{1}{n-2}.$$
 
 Let’s tabulate some numerical results for $$\text{Var}_n(\theta)$$:
 
@@ -88,9 +72,7 @@ Clearly, as $$n \to \infty$$, $$\text{Var}_n(\theta) \to 0$$. This confirms that
 ### 4. **Probability Density of $$\cos\theta$$**
 
 If we are more interested in the distribution of $$\eta = \cos\theta$$, the probability density function becomes:
-$$
-p_n(\eta) = \frac{\Gamma(n/2)}{\Gamma((n-1)/2)\sqrt{\pi}} (1 - \eta^2)^{(n-3)/2}.
-$$
+$$p_n(\eta) = \frac{\Gamma(n/2)}{\Gamma((n-1)/2)\sqrt{\pi}} (1 - \eta^2)^{(n-3)/2}.$$
 
 For high $$n$$, most of the density is concentrated near $$\eta = 0$$, meaning $$\cos\theta \approx 0$$ and $$\theta \approx \pi/2$$.
 

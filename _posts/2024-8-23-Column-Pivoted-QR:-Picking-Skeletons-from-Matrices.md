@@ -18,74 +18,53 @@ You might not have heard much about ID—it’s not a buzzword like SVD. Even Wi
 
 To set the stage, let’s recall that low-rank approximations are all about simplifying matrices while keeping their essential structure. Mathematically, it boils down to minimizing the approximation error:
 
-\[
-\min_{\text{rank}(M') \leq r} \| M' - M \|_F^2.
-\]
-
+$$\min_{\text{rank}(M') \leq r} \| M' - M \|_F^2.$$
 For example:
 - With no extra constraints, the SVD gives the optimal solution.
-- If one factor of \( M \approx AB \) is fixed, the pseudoinverse solves for the other.
-- In CR approximation, \( M \) is split as \( XY \), with \( X \) or \( Y \) built from specific rows or columns of \( M \).
+- If one factor of $$M \approx AB$$ is fixed, the pseudoinverse solves for the other.
+- In CR approximation, $$M$$ is split as $$XY$$, with $$X$$ or $$Y$$ built from specific rows or columns of $$M$$.
 
-CR works great if \( M \) itself is a product of two matrices, but what about when \( M \) is given directly? That’s where ID shines. ID represents \( M \) as:
+CR works great if $$M$$ itself is a product of two matrices, but what about when $$M$$ is given directly? That’s where ID shines. ID represents $$M$$ as:
 
-\[
-M \approx CZ,
-\]
-
-where \( C \) consists of a few chosen columns of \( M \), and \( Z \) is a flexible matrix of coefficients.
+$$M \approx CZ,$$
+where $$C$$ consists of a few chosen columns of $$M$$, and $$Z$$ is a flexible matrix of coefficients.
 
 Formally, ID tries to solve:
 
-\[
-\min_{S, Z} \| M[:, S] Z - M \|_F^2, \quad \text{s.t. } S \subset \{0, 1, \dots, m-1\}, \ |S| = r, \ Z \in \mathbb{R}^{r \times m}.
-\]
-
-Here, \( S \) is the set of selected column indices, and \( Z \) maps these columns back to \( M \). While solving for \( Z \) given \( C \) is straightforward (just use the pseudoinverse, \( C^\dagger M \)), choosing the optimal \( S \) is a combinatorial problem and notoriously NP-hard. Most algorithms aim for good approximations rather than exact solutions.
+$$\min_{S, Z} \| M[:, S] Z - M \|_F^2, \quad \text{s.t. } S \subset \{0, 1, \dots, m-1\}, \ |S| = r, \ Z \in \mathbb{R}^{r \times m}.$$
+Here, $$S$$ is the set of selected column indices, and $$Z$$ maps these columns back to $$M$$. While solving for $$Z$$ given $$C$$ is straightforward (just use the pseudoinverse, $$C^\dagger M$$), choosing the optimal $$S$$ is a combinatorial problem and notoriously NP-hard. Most algorithms aim for good approximations rather than exact solutions.
 
 ### The Geometry of ID
 
-To understand ID’s intuition, let’s look at its geometry. Imagine \( C \) as a collection of column vectors:
+To understand ID’s intuition, let’s look at its geometry. Imagine $$C$$ as a collection of column vectors:
 
-\[
-C = [c_1, c_2, \dots, c_r].
-\]
+$$C = [c_1, c_2, \dots, c_r].$$
+For any coefficient vector $$z = [z_1, z_2, \dots, z_r]^\top$$, the product $$Cz$$ is just a linear combination of these columns:
 
-For any coefficient vector \( z = [z_1, z_2, \dots, z_r]^\top \), the product \( Cz \) is just a linear combination of these columns:
-
-\[
-Cz = \sum_{i=1}^r z_i c_i.
-\]
-
-ID essentially picks a few columns of \( M \) to serve as a basis for reconstructing the rest. That’s where the "interpolative" in its name comes from—it’s about interpolation. Some stricter definitions impose bounds like \( |z_{i,j}| \leq 1 \) to ensure tight control over interpolation, but this constraint makes the problem even harder (still NP-hard!). Many practical algorithms relax this to \( |z_{i,j}| \leq 2 \), which works surprisingly well in most cases.
+$$Cz = \sum_{i=1}^r z_i c_i.$$
+ID essentially picks a few columns of $$M$$ to serve as a basis for reconstructing the rest. That’s where the "interpolative" in its name comes from—it’s about interpolation. Some stricter definitions impose bounds like $$|z_{i,j}| \leq 1$$ to ensure tight control over interpolation, but this constraint makes the problem even harder (still NP-hard!). Many practical algorithms relax this to $$|z_{i,j}| \leq 2$$, which works surprisingly well in most cases.
 
 ### Solving ID with QR
 
 There are two main approaches to solving ID: deterministic and randomized algorithms. Deterministic ones are more accurate but computationally heavy, while randomized ones trade off some precision for speed.
 
-A classic deterministic method involves QR decomposition with column pivoting (often translated as "column-pivoted QR" or simply "column-driven QR"). Why QR? Well, it connects naturally to ID’s geometry. When \( C \) is fixed, \( Z = C^\dagger M \) minimizes the error. Geometrically, this projects each column of \( M \) onto the subspace spanned by \( c_1, c_2, \dots, c_r \). Gram-Schmidt orthogonalization is a straightforward way to achieve this, and it’s at the heart of QR decomposition.
+A classic deterministic method involves QR decomposition with column pivoting (often translated as "column-pivoted QR" or simply "column-driven QR"). Why QR? Well, it connects naturally to ID’s geometry. When $$C$$ is fixed, $$Z = C^\dagger M$$ minimizes the error. Geometrically, this projects each column of $$M$$ onto the subspace spanned by $$c_1, c_2, \dots, c_r$$. Gram-Schmidt orthogonalization is a straightforward way to achieve this, and it’s at the heart of QR decomposition.
 
 The column-pivoted QR algorithm tweaks the order of orthogonalization. Instead of processing columns sequentially, it picks the one with the largest residual error at each step:
 
-\[
-q_1 = \frac{m_{\rho_1}}{\|m_{\rho_1}\|}, \quad 
-q_k = \frac{m_{\rho_k} - \sum_{j=1}^{k-1} (m_{\rho_k}^\top q_j) q_j}{\| \cdots \|}.
-\]
+$$q_1 = \frac{m_{\rho_1}}{\|m_{\rho_1}\|}, \quad 
+q_k = \frac{m_{\rho_k} - \sum_{j=1}^{k-1} (m_{\rho_k}^\top q_j) q_j}{\| \cdots \|}.$$
+This ensures the algorithm focuses on the most "important" columns first, and the final result approximates $$M$$ as:
 
-This ensures the algorithm focuses on the most "important" columns first, and the final result approximates \( M \) as:
-
-\[
-M \approx QR,
-\]
-
-where \( Q \) is orthogonal, and \( R \) is upper triangular. The selected columns correspond to \( Q[:, :r] R[:r, :r] \), giving us \( C \) and \( Z \).
+$$M \approx QR,$$
+where $$Q$$ is orthogonal, and $$R$$ is upper triangular. The selected columns correspond to $$Q[:, :r] R[:r, :r]$$, giving us $$C$$ and $$Z$$.
 
 ### Randomized Approaches
 
-Randomized algorithms aim to speed things up by reducing the matrix’s size. For example, instead of working on the full \( M \), they project its columns into a lower-dimensional space using techniques like the Johnson-Lindenstrauss lemma. One popular approach uses the Subsampled Randomized Fourier Transform (SRFT) to achieve this efficiently. Alternatively, some methods randomly sample \( k > r \) columns from \( M \) and then apply column-pivoted QR to these.
+Randomized algorithms aim to speed things up by reducing the matrix’s size. For example, instead of working on the full $$M$$, they project its columns into a lower-dimensional space using techniques like the Johnson-Lindenstrauss lemma. One popular approach uses the Subsampled Randomized Fourier Transform (SRFT) to achieve this efficiently. Alternatively, some methods randomly sample $$k > r$$ columns from $$M$$ and then apply column-pivoted QR to these.
 
 ### Practical Use and SciPy
 
-The deterministic column-pivoted QR algorithm is what SciPy implements by default (`rand=False` in `scipy.linalg.interpolative`). While it doesn’t strictly enforce bounds like \( |z_{i,j}| \leq 1 \), empirical evidence shows it performs well enough in practice. Randomized methods, on the other hand, are also available and shine when dealing with massive matrices.
+The deterministic column-pivoted QR algorithm is what SciPy implements by default (`rand=False` in `scipy.linalg.interpolative`). While it doesn’t strictly enforce bounds like $$|z_{i,j}| \leq 1$$, empirical evidence shows it performs well enough in practice. Randomized methods, on the other hand, are also available and shine when dealing with massive matrices.
 
 In short, ID strikes a balance between simplicity, interpretability, and efficiency, making it a powerful tool in the low-rank approximation toolbox.

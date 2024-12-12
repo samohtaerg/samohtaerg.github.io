@@ -15,9 +15,9 @@ Geometry—what comes to mind? If you’re thinking “measuring the Earth,” y
 
 Enter the **Pythagorean theorem**, the cornerstone of Euclidean geometry:
 
-$$
+\[
 ds^2 = dx^2 + dy^2 
-$$
+\]
 
 This formula assumes flatness and orthogonality, as described in **do Carmo’s Proposition 1.4**. But what if the surface is curved or the coordinates aren’t orthogonal? That’s where the idea of the **Riemannian metric** takes center stage.
 

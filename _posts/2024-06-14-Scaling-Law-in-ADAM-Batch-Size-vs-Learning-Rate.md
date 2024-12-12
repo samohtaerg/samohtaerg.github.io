@@ -16,7 +16,9 @@ Intuitively, when the batch size increases, the gradient of each batch becomes m
 
 The earliest answer to this question might be square root scaling. Specifically, if the batch size is increased by a factor of $n$, then the learning rate should be increased by $\sqrt{n}$. This concept originates from the 2014 paper "One Weird Trick for Parallelizing Convolutional Neural Networks." The derivation principle is to keep the variance of the SGD increments unchanged. Specifically, let the gradient of a randomly sampled single example be denoted as $\tilde{g}$, with its mean and covariance represented as $g$ and $\Sigma$, respectively. Here, $g$ is the gradient of all samples. When the sample size increases to $B$, we have:
 
-$$\tilde{g}_B \coloneqq \frac{1}{B} \sum_{i=1}^B \tilde{g}^{(i)}, \quad \mathbb{E}[\tilde{g}_B] = g, \quad \mathbb{E}\left[(\tilde{g}_B - g)(\tilde{g}_B - g)^\top\right] = \frac{\Sigma}{B}$$
+$$\tilde{g}_B:= \frac{1}{B} \sum_{i=1}^B \tilde{g}^{(i)}$$, 
+
+$$\quad \mathbb{E}[\tilde{g}_B] = g$$, $$\quad \mathbb{E}\left[\left(\tilde{g}_B - g\right)\left(\tilde{g}_B - g\right)^\top\right] = \frac{\Sigma}{B}.$$
 
 This means that increasing the sample size does not change the mean but reduces the covariance to $\frac{\Sigma}{B}$. For the SGD optimizer, the increment is $-\eta \tilde{g}_B$, whose covariance is proportional to $$\frac{\eta^2}{B}$$. Since a moderate amount of noise is necessary for the optimization process, when the batch size $B$ changes, we adjust the learning rate $\eta$ to keep the noise intensity (i.e., the covariance matrix) constant. This leads to:
 
@@ -58,15 +60,20 @@ $$\eta^* = \arg\min_\eta \mathbb{E}[L(\theta - \eta \tilde{g}^B)]$$
 
 This objective is intuitive: choose the learning rate that maximizes training efficiency on average (i.e., minimizes the loss function as quickly as possible). To solve this problem, we approximate the loss function to the second order:
 
-$$L(\theta - \eta \tilde{g}^B) \approx L(\theta) - \eta \tilde{g}^B^\top \frac{\partial L(\theta)}{\partial \theta} + \frac{1}{2} \eta^2 \tilde{g}^B^\top \frac{\partial^2 L(\theta)}{\partial \theta^2} \tilde{g}^B \coloneqq H\tilde{g}^B = L(\theta) - \eta \tilde{g}^B^\top g + \frac{1}{2} \eta^2 \tilde{g}^B^\top H \tilde{g}^B$$
+$$\mathbb{E}[\tilde{g}^B{}^\top H \tilde{g}^B] = \mathbb{E}[\text{Tr}(\tilde{g}^B{}^\top H \tilde{g}^B)] = \mathbb{E}[\text{Tr}(\tilde{g}^B \tilde{g}^B{}^\top H)] = \text{Tr}\left(\mathbb{E}[\tilde{g}^B \tilde{g}^B{}^\top] H\right) = \text{Tr}\left(\left(gg^\top + \frac{\Sigma}{B}\right) H\right).$$
+
 
 Here, $H$ is the Hessian matrix, and $\frac{\partial L(\theta)}{\partial \theta}$ is the gradient of the loss function. Ideally, the gradient is based on all samples, which is why its mean is $g$. Taking the expectation, we get:
 
-$$\mathbb{E}[L(\theta - \eta \tilde{g}^B)] \approx \mathbb{E}\left[L(\theta) - \eta \tilde{g}^B^\top g + \frac{1}{2} \eta^2 \tilde{g}^B^\top H \tilde{g}^B\right] = L(\theta) - \eta g^\top g + \frac{1}{2} \eta^2 \mathbb{E}[\tilde{g}^B^\top H \tilde{g}^B]$$
+$$
+\mathbb{E}[L(\theta - \eta \tilde{g}^B)] \approx \mathbb{E}\left[L(\theta) - \eta \tilde{g}^B{}^\top g + \frac{1}{2} \eta^2 \tilde{g}^B{}^\top H \tilde{g}^B\right] = L(\theta) - \eta g^\top g + \frac{1}{2} \eta^2 \mathbb{E}[\tilde{g}^B{}^\top H \tilde{g}^B].
+$$
 
 The last term requires some manipulation:
 
-$$\mathbb{E}[\tilde{g}^B^\top H \tilde{g}^B] = \mathbb{E}[\text{Tr}(\tilde{g}^B^\top H \tilde{g}^B)] = \mathbb{E}[\text{Tr}(\tilde{g}^B \tilde{g}^B^\top H)] = \text{Tr}\left(\mathbb{E}[\tilde{g}^B \tilde{g}^B^\top] H\right) = \text{Tr}\left((gg^\top + \frac{\Sigma}{B}) H\right)$$
+$$
+\mathbb{E}[\tilde{g}^B{}^\top H \tilde{g}^B] = \mathbb{E}[\text{Tr}(\tilde{g}^B{}^\top H \tilde{g}^B)] = \mathbb{E}[\text{Tr}(\tilde{g}^B \tilde{g}^B{}^\top H)] = \text{Tr}\left(\mathbb{E}[\tilde{g}^B \tilde{g}^B{}^\top] H\right) = \text{Tr}\left(\left(gg^\top + \frac{\Sigma}{B}\right) H\right).
+$$
 
 This transformation mainly uses the property $\text{Tr}(AB) = \text{Tr}(BA)$. Assuming that $H$ is positive definite, the problem becomes a quadratic function, and the optimal solution is easily obtained:
 

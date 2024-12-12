@@ -42,9 +42,7 @@ $$denotes the radial coordinate in a Cartesian-like coordinate system. These con
 
 The ADM mass $$M_{\text{ADM}}$$is defined using the spatial metric $$g_{ij}$$and its first derivatives on a spacelike hypersurface $$\Sigma$$. Explicitly, in a coordinate system where $$\Sigma$$is defined by $$t = \text{const}$$, we have:
 
-$$
-M_{\text{ADM}} = \frac{1}{16\pi} \lim_{r \to \infty} \int_{S_r} \left( \partial_j g_{ij} - \partial_i g_{jj} \right) n^i \, dS,
-$$
+$$M_{\text{ADM}} = \frac{1}{16\pi} \lim_{r \to \infty} \int_{S_r} \left( \partial_j g_{ij} - \partial_i g_{jj} \right) n^i \, dS,$$
 
 where $$S_r$$is a large sphere of radius $$r$$, $$n^i$$is the unit normal vector to $$S_r$$, and $$dS$$is the surface element. This integral captures both the matter and gravitational contributions to the total energy.
 

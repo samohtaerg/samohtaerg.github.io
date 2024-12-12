@@ -19,67 +19,47 @@ For quadratic variational principles, the connection is particularly juicy. Let�
 
 ## From the Principle of Least Action to Riemannian Geometry
 
-Let’s start with the principle of least action in classical mechanics. Consider a simple two-dimensional conservative system. The trajectory \( x(t), y(t) \) minimizes the action\(\sigma\):
+Let’s start with the principle of least action in classical mechanics. Consider a simple two-dimensional conservative system. The trajectory $$x(t), y(t)$$ minimizes the action\(\sigma\):
 
-\[
-S = \int \left[ \frac{1}{2} \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 \right) - U(x, y) \right] dt
-\]
+$$S = \int \left[ \frac{1}{2} \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 \right) - U(x, y) \right] dt$$
 
-Here, \( U(x, y) \) is the potential energy, and we’ve set \( m = 1 \) for simplicity. Varying \( S \) gives the Euler-Lagrange equations:
+Here, $$U(x, y)$$ is the potential energy, and we’ve set $$m = 1$$ for simplicity. Varying $$S$$ gives the Euler-Lagrange equations:
 
-\[
-\frac{d^2 x}{dt^2} = -\frac{\partial U}{\partial x}, \quad \frac{d^2 y}{dt^2} = -\frac{\partial U}{\partial y}
-\]
+$$\frac{d^2 x}{dt^2} = -\frac{\partial U}{\partial x}, \quad \frac{d^2 y}{dt^2} = -\frac{\partial U}{\partial y}$$
 
 These are the equations of motion—nothing new so far.
 
 Now let’s throw in energy conservation:
 
-\[
-\frac{1}{2} \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 \right) + U(x, y) = E
-\]
+$$\frac{1}{2} \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 \right) + U(x, y) = E$$
 
-We can use this to eliminate \( dt \). Rearrange the energy equation:
+We can use this to eliminate $$dt$$. Rearrange the energy equation:
 
-\[
-U(x, y) = E - \frac{1}{2} \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 \right)
-\]
+$$U(x, y) = E - \frac{1}{2} \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 \right)$$
 
-Substitute this back into \( S \):
+Substitute this back into $$S$$:
 
-\[
-S = \int \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 - E \right) dt
-\]
+$$S = \int \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 - E \right) dt$$
 
-The term \( -E \, dt \) is a total differential—it doesn’t affect the variational result. So, the equivalent action is:
+The term $$-E \, dt$$ is a total differential—it doesn’t affect the variational result. So, the equivalent action is:
 
-\[
-S = \int \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 \right) dt
-\]
+$$S = \int \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 \right) dt$$
 
-But wait! Let’s express \( dt^2 \) using the energy equation:
+But wait! Let’s express $$dt^2$$ using the energy equation:
 
-\[
-dt^2 = \frac{dx^2 + dy^2}{2(E - U)}
-\]
+$$dt^2 = \frac{dx^2 + dy^2}{2(E - U)}$$
 
-Substituting \( dt^2 \) into the action:
+Substituting $$dt^2$$ into the action:
 
-\[
-S = \int \sqrt{2(E - U)(dx^2 + dy^2)}
-\]
+$$S = \int \sqrt{2(E - U)(dx^2 + dy^2)}$$
 
 Now, drop the constant factor (variation doesn’t care about it), and we have:
 
-\[
-S = \int \sqrt{(E - U)(dx^2 + dy^2)}
-\]
+$$S = \int \sqrt{(E - U)(dx^2 + dy^2)}$$
 
 Here’s the punchline: this action has the form of a Riemannian metric:
 
-\[
-ds^2 = (E - U)(dx^2 + dy^2)
-\]
+$$ds^2 = (E - U)(dx^2 + dy^2)$$
 
 The geodesics of this metric describe the trajectories of the system! Physics just got geometric.
 
@@ -89,27 +69,19 @@ The geodesics of this metric describe the trajectories of the system! Physics ju
 
 Let’s confirm this. Suppose the metric is:
 
-\[
-ds^2 = (E - U)(dx^2 + dy^2)
-\]
+$$ds^2 = (E - U)(dx^2 + dy^2)$$
 
 Its geodesics minimize the action:
 
-\[
-S = \int \sqrt{(E - U)(dx^2 + dy^2)}
-\]
+$$S = \int \sqrt{(E - U)(dx^2 + dy^2)}$$
 
 Varying this action gives:
 
-\[
-\delta S = \int \delta \sqrt{(E - U)(dx^2 + dy^2)}
-\]
+$$\delta S = \int \delta \sqrt{(E - U)(dx^2 + dy^2)}$$
 
 After some algebra and integration by parts (trust me, it’s messy but doable), you recover:
 
-\[
-\frac{d^2 x}{dt^2} + \frac{\partial U}{\partial x} = 0, \quad \frac{d^2 y}{dt^2} + \frac{\partial U}{\partial y} = 0
-\]
+$$\frac{d^2 x}{dt^2} + \frac{\partial U}{\partial x} = 0, \quad \frac{d^2 y}{dt^2} + \frac{\partial U}{\partial y} = 0$$
 
 The geodesics match the equations of motion! Voilà—mechanics and geometry are two sides of the same coin.
 
@@ -119,15 +91,11 @@ The geodesics match the equations of motion! Voilà—mechanics and geometry are
 
 This idea generalizes beautifully. For a conservative system with the action:
 
-\[
-S = \int \left[ \frac{1}{2} g_{\mu\nu} \frac{dx^\mu}{dt} \frac{dx^\nu}{dt} - U(x) \right] dt
-\]
+$$S = \int \left[ \frac{1}{2} g_{\mu\nu} \frac{dx^\mu}{dt} \frac{dx^\nu}{dt} - U(x) \right] dt$$
 
-the trajectory of energy \( E \) corresponds to the geodesics of the metric:
+the trajectory of energy $$E$$ corresponds to the geodesics of the metric:
 
-\[
-ds^2 = [E - U(x)] g_{\mu\nu} dx^\mu dx^\nu
-\]
+$$ds^2 = [E - U(x)] g_{\mu\nu} dx^\mu dx^\nu$$
 
 The process works for any quadratic variational principle. Surprisingly, Jacobi discovered this way back in 1837!
 
@@ -137,29 +105,21 @@ The process works for any quadratic variational principle. Surprisingly, Jacobi 
 
 This isn’t just theoretical fun—it’s practical, too. For example, consider the metric:
 
-\[
-ds^2 = f(x, y)(dx^2 + dy^2)
-\]
+$$ds^2 = f(x, y)(dx^2 + dy^2)$$
 
 The geodesic equations are:
 
-\[
-\frac{d^2 x}{ds^2} = -\frac{1}{2f} \frac{\partial f}{\partial x} \left( \frac{dx}{ds} \right)^2 + \dots
-\]
+$$\frac{d^2 x}{ds^2} = -\frac{1}{2f} \frac{\partial f}{\partial x} \left( \frac{dx}{ds} \right)^2 + \dots$$
 
-Solving these directly? Painful. But if we switch to the time parameter \( dt \), we simplify things:
+Solving these directly? Painful. But if we switch to the time parameter $$dt$$, we simplify things:
 
-\[
-dt = \sqrt{\frac{dx^2 + dy^2}{2f(x, y)}}
-\]
+$$dt = \sqrt{\frac{dx^2 + dy^2}{2f(x, y)}}$$
 
 This reduces the geodesic equation to:
 
-\[
-\frac{d^2 x}{dt^2} = \frac{\partial f}{\partial x}, \quad \frac{d^2 y}{dt^2} = \frac{\partial f}{\partial y}
-\]
+$$\frac{d^2 x}{dt^2} = \frac{\partial f}{\partial x}, \quad \frac{d^2 y}{dt^2} = \frac{\partial f}{\partial y}$$
 
-For simple cases, like \( f(x, y) = \frac{1}{2}(x^2 + y^2) \), these become linear and solvable.
+For simple cases, like $$f(x, y) = \frac{1}{2}(x^2 + y^2)$$, these become linear and solvable.
 
 ---
 

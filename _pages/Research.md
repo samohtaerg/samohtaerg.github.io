@@ -6,8 +6,6 @@ author_profile: true
 ---
 
 # Research
-
-## Research Philosophy
 Embracing John Tukey's perspective that "an approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem," my research aims to develop theoretical frameworks that not only provide deep insights but also demonstrate practical utility on large-scale datasets.
 I focus on two core questions:
 1) What embedded low-dimensional structures are present in data, and 

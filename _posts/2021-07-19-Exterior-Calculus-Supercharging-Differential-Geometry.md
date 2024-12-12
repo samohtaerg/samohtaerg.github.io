@@ -46,19 +46,19 @@ $$
 de^\mu = e^\alpha \omega_\alpha^{\ \mu}, 
 $$
 
-where $$\omega_\alpha^{\ \mu}$$are the **connection 1-forms**. Substituting, we get:
+where $$\omega_\alpha^{\ \mu}$$ are the **connection 1-forms**. Substituting, we get:
 
-\$$
+$$
 d\eta_{\mu\nu} = \eta_{\alpha\nu} \omega_\mu^{\ \alpha} + \eta_{\mu\alpha} \omega_\nu^{\ \alpha}.
-\$$
+$$
 
-If $$\eta_{\mu\nu}$$is constant, this simplifies to:
+If $$\eta_{\mu\nu}$$ is constant, this simplifies to:
 
 $$
 \eta_{\alpha\nu} \omega_\mu^{\ \alpha} + \eta_{\mu\alpha} \omega_\nu^{\ \alpha} = 0, 
 $$
 
-showing that $$\omega_{\mu\nu}$$is antisymmetric, encoding how frames twist and bend in space.
+showing that $$\omega_{\mu\nu}$$ is antisymmetric, encoding how frames twist and bend in space.
 
 ---
 

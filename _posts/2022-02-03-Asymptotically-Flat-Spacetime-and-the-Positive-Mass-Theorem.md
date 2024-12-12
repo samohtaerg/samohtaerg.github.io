@@ -76,9 +76,7 @@ where $$r$$and $$t$$are unbounded. Applying the transformations:
 
 1. $$u = t - r, \, v = t + r$$,
 
-2. $$
-\tilde{g}_{\mu\nu} = \frac{4}{(1 + u^2)(1 + v^2)} g_{\mu\nu}
-$$,
+2. $$\tilde{g}_{\mu\nu} = \frac{4}{(1 + u^2)(1 + v^2)} g_{\mu\nu}$$,
 
 3. $$T = \tan^{-1}(v) + \tan^{-1}(u), \, R = \tan^{-1}(v) - \tan^{-1}(u),$$
 

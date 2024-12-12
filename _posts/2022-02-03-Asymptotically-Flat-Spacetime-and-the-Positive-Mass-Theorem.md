@@ -1,6 +1,13 @@
 ---
-title: Asymptotically Flat Spacetime and the Positive Mass Theorem
+title: 'Asymptotically Flat Spacetime and the Positive Mass Theorem'
+date: 2022-02-03
+permalink: /posts/2024/12/Asymptotically-Flat/
+tags:
+  - ADM Mass
+  - Positive Mass Theorem
+  - Riemannian Geometry
 ---
+
 
 ### 1. What does it mean for a Spacetime to be "Flat"?
 

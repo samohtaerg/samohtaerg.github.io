@@ -14,7 +14,6 @@ math: true
 </script>
 
 ### 1. What does it mean for a Spacetime to be "Flat"?
-
 In this section, we explore the **Positive Mass Theorem**, a cornerstone result in classical general relativity. The theorem rigorously demonstrates that, under suitable physical and geometric assumptions, the total ADM mass of an asymptotically flat spacetime is non-negative, with equality holding only for Minkowski spacetime.
 
 #### 1.1 Energy-Momentum in General Relativity

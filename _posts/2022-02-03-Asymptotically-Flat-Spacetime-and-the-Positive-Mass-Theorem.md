@@ -72,7 +72,7 @@ $$
 ds^2 = -dt^2 + dr^2 + r^2 d\Omega^2,
 $$
 
-where $$r$$and $$t$$are unbounded. Applying the transformations:
+where $$r$$ and $$t$$ are unbounded. Applying the transformations:
 
 1. $$u = t - r, \, v = t + r$$,
 

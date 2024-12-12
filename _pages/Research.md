@@ -17,28 +17,28 @@ I focus on two core questions:
 - **Methodology**: Transfer Learning, Representation Learning, Multi-Task Learning, Manifold Learning, Low-Rank Approximation, Nonparametric Methods, Multi-Modal Data Integration, Hybrid Models
 - **Applications**: Biomedical Data Analysis, Medical Image Processing, Genomics, Privacy-Preserving Machine Learning
 
-### More Specific Research Interests
+### More Specific Research Interests:
 
-#### 1. Latent Structures in High-Dimensional Data
+### 1. Latent Structures in High-Dimensional Data
 - Develop scalable algorithms that identify and utilize latent structures (e.g. Manifolds) to improve dimensionality reduction and feature extraction. 
 - Incorporate Data-driven nonparametric learning methods, such as diffusion map, RKHS, to achieve better (low-rank) approximations of high-dimensional, large scale data.
 
-#### 2. Transfer Learning for Biomedical Applications
+### 2. Transfer Learning for Biomedical Applications
 - Develop scalable, domain-informed transfer learning frameworks that exploit shared latent structures, enabling robust generalization across diverse tasks.
 
-#### 3. Hybrid Modeling for Interpretable Machine Learning
+### 3. Hybrid Modeling for Interpretable Machine Learning
 - Design hybrid frameworks combining structured models (e.g., survival models or epidemiological models) with machine learning to enhance prediction accuracy while maintaining transparency in biostatistical applications.
 
-### Other Research Interests
+### Other Research Interests:
 
-#### Data Scarcity and Privacy-Aware Learning
+### Data Scarcity and Privacy-Aware Learning
 - Develop domain-informed models that integrate biological insights and leverage privacy-preserving techniques, like federated learning, to effectively learn from limited and sensitive biomedical data.
 
-#### Multi-Modal Data Integration
+### Multi-Modal Data Integration
 - Explore methods (e.g. transfer learning) for integrating diverse data modalities, such as genomics, imaging, and health records, to uncover actionable insights and improve predictions in biostatistical applications.
 
 
-#### Adaptive Learning for Dynamic Environments
+### Adaptive Learning for Dynamic Environments
 - Create adaptive learning frameworks that update models in real-time to handle dynamic environments and heterogeneous populations, enabling robust decision-making in biostatistics.
 
 ## Publications and Preprints

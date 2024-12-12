@@ -31,7 +31,7 @@ and under coordinate transformations, the components of \( \Gamma^\lambda_{\mu\n
 
 To define a total energy-momentum for an isolated system, we require the spacetime to be **asymptotically flat**. For a metric \( g_{\mu\nu} \), asymptotic flatness is characterized by:
 
-1. $ g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu} $, where \( h_{\mu\nu} = O(r^{-1}) \),
+1. $$g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$$, where \( h_{\mu\nu} = O(r^{-1}) \),
 2. \( \partial_\rho h_{\mu\nu} = O(r^{-2}) \),
 3. \( \partial_\sigma \partial_\rho h_{\mu\nu} = O(r^{-3}) \).
 

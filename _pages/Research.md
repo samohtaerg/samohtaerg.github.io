@@ -6,12 +6,10 @@ author_profile: true
 ---
 
 {% include base_path %}
-
-# Research
 Embracing John Tukey's perspective that "an approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem," my research aims to develop theoretical frameworks that not only provide deep insights but also demonstrate practical utility on large-scale datasets.
 I focus on two core questions:
-1) What embedded low-dimensional structures are present in data, and 
-2) How can we exploit them algorithmically?
+### 1 What embedded low-dimensional structures are present in data, and 
+### 2 How can we exploit them algorithmically?
 ## Research Interests
 
 ### Core Areas
@@ -22,35 +20,26 @@ I focus on two core questions:
 ### More Specific Research Interests
 
 #### 1. Latent Structures in High-Dimensional Data
-- Development of scalable algorithms for identifying and leveraging latent structures, particularly manifolds, to enhance dimensionality reduction and feature extraction
-- Integration of data-driven nonparametric learning methods, including geometric multi-scale decomposition, for improved low-rank approximations of high-dimensional biomedical data
+- Develop scalable algorithms that identify and utilize latent structures (e.g. Manifolds) to improve dimensionality reduction and feature extraction. 
+- Incorporate Data-driven nonparametric learning methods, such as diffusion map, RKHS, to achieve better (low-rank) approximations of high-dimensional, large scale data.
 
 #### 2. Transfer Learning for Biomedical Applications
-- Design and implementation of scalable, domain-informed transfer learning frameworks
-- Exploitation of shared latent structures to enable robust generalization across diverse tasks
-- Focus on practical applications in biomedical settings
+- Develop scalable, domain-informed transfer learning frameworks that exploit shared latent structures, enabling robust generalization across diverse tasks.
 
 #### 3. Hybrid Modeling for Interpretable Machine Learning
-- Development of hybrid frameworks that combine structured models (e.g., survival models, epidemiological models) with modern machine learning approaches
-- Enhancement of prediction accuracy while maintaining transparency in biostatistical applications
-- Integration of domain knowledge with data-driven insights
+- Design hybrid frameworks combining structured models (e.g., survival models or epidemiological models) with machine learning to enhance prediction accuracy while maintaining transparency in biostatistical applications.
 
 ### Broader Research Interests
 
 #### Data Scarcity and Privacy-Aware Learning
-- Development of domain-informed models incorporating biological insights
-- Implementation of privacy-preserving techniques, including federated learning
-- Focus on effective learning from limited and sensitive biomedical data
+- Develop domain-informed models that integrate biological insights and leverage privacy-preserving techniques, like federated learning, to effectively learn from limited and sensitive biomedical data.
 
 #### Multi-Modal Data Integration
-- Exploration of transfer learning methods for integrating diverse data modalities
-- Integration of genomics, imaging, and health records
-- Discovery of actionable insights for improved predictions in biostatistical applications
+- Explore methods (e.g. transfer learning) for integrating diverse data modalities, such as genomics, imaging, and health records, to uncover actionable insights and improve predictions in biostatistical applications.
+
 
 #### Adaptive Learning for Dynamic Environments
-- Creation of real-time adaptive learning frameworks
-- Development of robust decision-making systems for biostatistics
-- Handling of dynamic environments and heterogeneous populations
+- Create adaptive learning frameworks that update models in real-time to handle dynamic environments and heterogeneous populations, enabling robust decision-making in biostatistics.
 
 ## Publications and Preprints
 

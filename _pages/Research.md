@@ -71,7 +71,7 @@ I focus on two core questions:
 - **Compressed Sensing: Making the Most of Less Data**  
   *Linear Programming and Optimization Seminar, UC Berkeley (2021)*
 
-- **Spectral Methods and Fourier Analysis: Transforming PDEs to ODEs**  
+- **The Tensor Power Trick in Harmonic Analysis: From Riesz-Thorin to Hausdorff-Young**  
   *Fourier and Harmonic Analysis Seminar, UC Berkeley (2021)*
   
 - **Tessellations of the Hyperbolic Plane: Poincaré's Disk**  

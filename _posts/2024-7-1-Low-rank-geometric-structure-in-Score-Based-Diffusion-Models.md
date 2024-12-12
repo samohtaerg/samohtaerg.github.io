@@ -1,6 +1,6 @@
 ---
 title: 'Geometric Structure in Score-Based Diffusion Models'
-date: 2024-11-1
+date: 2024-7-1
 permalink: /posts/2024/11/Understanding Score-Based Diffusion Models/
 tags:
   - Diffusion Models

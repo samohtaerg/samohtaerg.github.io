@@ -1,4 +1,14 @@
-HWhy Are Two Random Vectors Almost Orthogonal in High Dimensions?
+---
+title: 'Why Are Two Random Vectors Almost Orthogonal in High Dimensions'
+date: 2024-11-18
+permalink: /posts/2024/11/Why Are Two Random Vectors Almost Orthogonal in High Dimensions/
+tags:
+  - High-Dimensional Geometry
+  - Random Vectors
+  - Orthogonality
+math: true
+---
+
 
 This phenomenon seems counterintuitive because in our everyday experience in 2D and 3D spaces, angles between random vectors feel distributed across the full range. However, in higher dimensions, things change drastically. Let’s dig into the math and theory to understand this.
 

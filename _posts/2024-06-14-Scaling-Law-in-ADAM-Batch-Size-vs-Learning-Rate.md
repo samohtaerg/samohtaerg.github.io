@@ -151,8 +151,3 @@ Now, we need to determine $\tilde{u}^B$ and compute the corresponding $\mathbb{E
 
 The Surge Phenomenon can be intuitively understood as a manifestation of the suboptimality of adaptive learning rate strategies. Taking the approximation $\tilde{u}^B = \text{sign}(\tilde{g}^B)$ as an example, as $B$ increases, $\tilde{g}^B$ becomes more accurate and approaches $\text{sign}(g)$ as $B \to \infty$. However, $\text{sign}(g)$ is not necessarily the most scientifically accurate update direction, especially in the later stages of training where adaptive strategies might have negative effects. Therefore, when $B$ is appropriately sized, the noise in $\text{sign}(\tilde{g}^B)$ can help correct this suboptimality. As $B$ continues to increase and the noise decreases, the opportunity for such corrections diminishes, necessitating a more cautious reduction in the learning rate.
 
-## Supplementary Notes
-
-It should be noted that the starting points and final conclusions of the above analyses are similar to those in the original paper "Surge Phenomenon in Optimal Learning Rate and Batch Size Scaling," but the intermediate approximation steps differ.
-
-Most conclusions in the original paper are derived under the assumption $B \ll \frac{\pi (\sigma_i / g_i)^2}{2}$, leading to the conclusion that the Surge Phenomenon almost always occurs, which is not entirely scientific. Notably, the assumption $B \ll \frac{\pi (\sigma_i / g_i)^2}{2}$ itself is somewhat problematic because its right-hand side depends on $i$. We cannot assign a separate batch size for each component, so to obtain a global result, we must assume $B \ll \min_i \frac{\pi (\

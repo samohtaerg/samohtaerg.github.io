@@ -1,5 +1,5 @@
 ---
-title: '# Scaling law in ADAM: Batch Size vs Learning Rate'
+title: 'Scaling law in ADAM: Batch Size vs Learning Rate'
 date: 2024-06-14
 permalink: /posts/2013/08/blog-post-2/
 tags:

@@ -19,7 +19,7 @@ For quadratic variational principles, the connection is particularly juicy. Let�
 
 ## From the Principle of Least Action to Riemannian Geometry
 
-Let’s start with the principle of least action in classical mechanics. Consider a simple two-dimensional conservative system. The trajectory \( x(t), y(t) \) minimizes the action:
+Let’s start with the principle of least action in classical mechanics. Consider a simple two-dimensional conservative system. The trajectory \( x(t), y(t) \) minimizes the action\(\sigma\):
 
 \[
 S = \int \left[ \frac{1}{2} \left( \left( \frac{dx}{dt} \right)^2 + \left( \frac{dy}{dt} \right)^2 \right) - U(x, y) \right] dt

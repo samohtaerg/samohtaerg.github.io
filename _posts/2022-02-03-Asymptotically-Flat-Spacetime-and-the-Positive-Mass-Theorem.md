@@ -39,11 +39,11 @@ To define a total energy-momentum for an isolated system, we require the spaceti
 Here, $$r = \sqrt{x^2 + y^2 + z^2}
 $$denotes the radial coordinate in a Cartesian-like coordinate system. These conditions ensure that $$g_{\mu\nu}$$approaches the Minkowski metric $$\eta_{\mu\nu}$$at spatial infinity.
 
-The ADM mass $$M_{\text{ADM}}$$is defined using the spatial metric $$g_{ij}$$and its first derivatives on a spacelike hypersurface $$\Sigma$$. Explicitly, in a coordinate system where $$\Sigma$$is defined by $$t = \text{const}$$, we have:
+The ADM mass $$M_{\text{ADM}}$$ is defined using the spatial metric $$g_{ij}$$ and its first derivatives on a spacelike hypersurface $$\Sigma$$. Explicitly, in a coordinate system where $$\Sigma$$is defined by $$t = \text{const}$$, we have:
 
 $$M_{\text{ADM}} = \frac{1}{16\pi} \lim_{r \to \infty} \int_{S_r} \left( \partial_j g_{ij} - \partial_i g_{jj} \right) n^i \, dS,$$
 
-where $$S_r$$is a large sphere of radius $$r$$, $$n^i$$is the unit normal vector to $$S_r$$, and $$dS$$is the surface element. This integral captures both the matter and gravitational contributions to the total energy.
+where $$S_r$$ is a large sphere of radius $$r$$, $$n^i$$is the unit normal vector to $$S_r$$, and $$dS$$is the surface element. This integral captures both the matter and gravitational contributions to the total energy.
 
 #### 1.3 Modern Definition via Conformal Compactification
 
@@ -63,7 +63,7 @@ Under this transformation, the "infinity" of the original spacetime becomes a bo
 
 1. The causal structure, determined by the light cone $$g_{\mu\nu} dx^\mu dx^\nu = 0$$, remains invariant because conformal transformations preserve angles.
 
-2. Null geodesics in $$g_{\mu\nu}$$remain null in $$\tilde{g}_{\mu\nu}$$.
+2. Null geodesics in $$g_{\mu\nu}$$ remain null in $$\tilde{g}_{\mu\nu}$$.
 
 As an example, consider the Minkowski metric:
 
@@ -85,7 +85,7 @@ $$
 \tilde{ds}^2 = -dT^2 + dR^2 + \sin^2 R \, d\Omega^2,
 $$
 
-where $$R$$and $$T$$are bounded, with $$R \in [0, \pi]$$and $$T \in [-\pi, \pi]$$.
+where $$R$$ and $$T$$ are bounded, with $$R \in [0, \pi]$$and $$T \in [-\pi, \pi]$$.
 
 #### 1.4 Geometric Tools and Ricci Tensor
 
@@ -123,6 +123,6 @@ $$
 \mathcal{D}\psi = \gamma^\mu \nabla_\mu \psi,
 $$
 
-where $$\psi$$is a spinor field and $$\gamma^\mu$$are the gamma matrices satisfying the Clifford algebra.
+where $$\psi$$ is a spinor field and $$\gamma^\mu$$are the gamma matrices satisfying the Clifford algebra.
 
 ---

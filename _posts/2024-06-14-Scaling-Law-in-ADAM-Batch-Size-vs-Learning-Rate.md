@@ -8,7 +8,7 @@ tags:
   - Scaling Law
 ---
 
-## How Does Batch Size Impact Training Dynamics?
+### How Does Batch Size Impact Training Dynamics?
 
 Intuitively, when the batch size increases, the gradient of each batch becomes more accurate, allowing for larger steps—i.e., increasing the learning rate—to reach the goal faster and shorten training time. This is generally intuitive. The question is, how much should it be increased to be optimal?
 

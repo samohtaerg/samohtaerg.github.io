@@ -16,7 +16,7 @@ Intuitively, when the batch size increases, the gradient of each batch becomes m
 
 The earliest answer to this question might be square root scaling. Specifically, if the batch size is increased by a factor of $n$, then the learning rate should be increased by $\sqrt{n}$. This concept originates from the 2014 paper "One Weird Trick for Parallelizing Convolutional Neural Networks." The derivation principle is to keep the variance of the SGD increments unchanged. Specifically, let the gradient of a randomly sampled single example be denoted as $\tilde{g}$, with its mean and covariance represented as $g$ and $\Sigma$, respectively. Here, $g$ is the gradient of all samples. When the sample size increases to $B$, we have:
 
-$$\tilde{g}_B:= \frac{1}{B} \sum_{i=1}^B \tilde{g}^{(i)}$$, 
+$$\tilde{g}_B := \frac{1}{B} \sum_{i=1}^B \tilde{g}^{(i)}$$
 
 $$\quad \mathbb{E}[\tilde{g}_B] = g$$, $$\quad \mathbb{E}\left[\left(\tilde{g}_B - g\right)\left(\tilde{g}_B - g\right)^\top\right] = \frac{\Sigma}{B}.$$
 

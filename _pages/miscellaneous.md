@@ -53,7 +53,7 @@ permalink: /miscellaneous/
       <p style="font-size: 14px; color: #555; margin-top: 10px; text-align: center;">Melodic Dubstep</p>
     </div>
 
-    <!-- Video 5 -->
+  <!-- Video 5 -->
   <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
       <video width="100%" controls style="border: none; border-radius: 8px;">
         <source src="https://www.dropbox.com/scl/fi/r5yqfowtnoqmfhbfkxhc1/darksynth.mp4?rlkey=s6r9vrlscn1v0uaocjon6bq5a&st=cc6yuz1t&raw=1" type="video/mp4">

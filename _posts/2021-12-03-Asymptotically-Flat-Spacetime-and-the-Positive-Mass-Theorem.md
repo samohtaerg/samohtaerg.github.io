@@ -8,11 +8,6 @@ tags:
   - Riemannian Geometry
 math: true
 ---
-
-<script type="text/javascript" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 ### 1. What does it mean for a Spacetime to be "Flat"?
 In this section, we explore the **Positive Mass Theorem**, a cornerstone result in classical general relativity. The theorem rigorously demonstrates that, under suitable physical and geometric assumptions, the total ADM mass of an asymptotically flat spacetime is non-negative, with equality holding only for Minkowski spacetime.
 

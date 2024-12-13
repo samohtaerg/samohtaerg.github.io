@@ -1,6 +1,6 @@
 ---
 title: 'Asymptotically Flat Spacetime and the Positive Mass Theorem'
-date: 2022-02-03
+date: 2021-12-03
 permalink: /posts/2024/12/Asymptotically-Flat/
 tags:
   - ADM Mass

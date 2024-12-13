@@ -82,7 +82,7 @@ permalink: /miscellaneous/
         <source src="https://www.dropbox.com/scl/fi/hgqka6aot9vsi3or1wizk/Hungarian-Rhapsody.mp4?rlkey=28xzpgbnk6xvnzrf605t9bfuu&st=5s4w9hy3&raw=1" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <p style="font-size: 14px; color: #555; margin-top: 10px; text-align: center;">Hungarian Rhapsody</p>
+      <p style="font-size: 14px; color: #555; margin-top: 10px; text-align: center;">Liszt - Hungarian Rhapsody No. 9, S.244/9, in E-flat major, "Carnival in Pest".</p>
     </div>
   </div>
 </div>

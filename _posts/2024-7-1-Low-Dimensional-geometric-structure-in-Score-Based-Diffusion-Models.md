@@ -10,7 +10,7 @@ tags:
 math: true
 ---
 
-
+What hidden low-dimensional patterns lie beneath the high-dimensional noise of score-based diffusion models, and how do they unlock new possibilities in machine learning?
 ## Preliminaries on Score-Based Diffusion Models
 
 ### Forward Process

@@ -5,66 +5,67 @@ permalink: /miscellaneous/
 ---
 
 ## Jingle Bells Project
-In 2021, the idea took hold: a new version of "Jingle Bells" every Christmas. The thought of creating something on Christmas Eve felt like a ritual against the year's monotony.
+<div style="text-align: center; margin: 40px auto; max-width: 700px;">
+  <p style="font-size: 18px; line-height: 1.6; color: #444;">
+    In 2021, the idea took hold: a new version of "Jingle Bells" every Christmas. The thought of creating something on Christmas Eve felt like a ritual against the year's monotony.<br><br>
+    Each year, a new genre, tied to the moment's obsession. First, a Fugue. Then, Bossa Nova jazz. Last year, a Waltz. A tradition not just of music but of stepping into unfamiliar rhythms, beats, flows, and cultures. An annual promise: more to come.
+  </p>
+</div>
 
-Each year, a new genre, tied to the moment's obsession. First, a Fugue. Then, Bossa Nova jazz. Last year, a Waltz. A tradition not just of music but of stepping into unfamiliar rhythms, beats, flows, and cultures. An annual promise: more to come.
-
-
-<div style="text-align: center; margin: 20px;">
-  <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+<div style="text-align: center; margin: 40px 0;">
+  <video width="640" height="360" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/czcth4psvu9l4gf43l7nu/jinglebells2021.mp4?rlkey=3nr2grnr5ds7drk1g1ev2anbd&st=19amcud0&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Jingle Bells 2021 (Fugue)</p>
+  <p style="font-size: 16px; color: #555; margin-top: 10px;">Jingle Bells 2021 (Fugue)</p>
 </div>
 
-<div style="text-align: center; margin: 20px;">
-  <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+<div style="text-align: center; margin: 40px 0;">
+  <video width="640" height="360" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/q3ofsu8dog3t31mwbq0nq/2022-Jingle-Bells.mp4?rlkey=849qhdc7jhfn18sehbli418dx&st=6b10w0s8&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Jingle Bells 2022 (Bossa Nova Jazz)</p>
+  <p style="font-size: 16px; color: #555; margin-top: 10px;">Jingle Bells 2022 (Bossa Nova Jazz)</p>
 </div>
 
-
-<div style="text-align: center; margin: 20px;">
-  <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+<div style="text-align: center; margin: 40px 0;">
+  <video width="640" height="360" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/s64sesp5iz6oslgdscwln/Jingle-Bells-2023.mp4?rlkey=lwicc6aujx1b7niwh3osfdx8d&st=o56pbclo&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Jingle Bells 2023 (Waltz)</p>
+  <p style="font-size: 16px; color: #555; margin-top: 10px;">Jingle Bells 2023 (Waltz)</p>
 </div>
 
-## Electronic 
+## Electronic
 <div style="text-align: center; margin: 40px 0;">
-  <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <video width="640" height="360" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/9ee52b76sj6i08ilcbn73/melodic-dubstep.mp4?rlkey=8jkckkk31qildkf1cq78krwiu&st=n8s08hz0&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Melodic Dubstep</p>
+  <p style="font-size: 16px; color: #555; margin-top: 10px;">Melodic Dubstep</p>
 </div>
 
 <div style="text-align: center; margin: 40px 0;">
-  <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <video width="640" height="360" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/r5yqfowtnoqmfhbfkxhc1/darksynth.mp4?rlkey=s6r9vrlscn1v0uaocjon6bq5a&st=cc6yuz1t&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Darksynth</p>
+  <p style="font-size: 16px; color: #555; margin-top: 10px;">Darksynth</p>
 </div>
 
 <div style="text-align: center; margin: 40px 0;">
-  <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <video width="640" height="360" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/t876t2qfa852kiowbs5xg/vibe.mp4?rlkey=ei0o4t88j4knnx1t3vd0tcpnm&st=zntsi6su&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Vibin'</p>
+  <p style="font-size: 16px; color: #555; margin-top: 10px;">Vibin'</p>
 </div>
 
 ## Piano
 <div style="text-align: center; margin: 40px 0;">
-  <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <video width="640" height="360" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/hgqka6aot9vsi3or1wizk/Hungarian-Rhapsody.mp4?rlkey=28xzpgbnk6xvnzrf605t9bfuu&st=5s4w9hy3&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Hungarian Rhapsody No. 9, S.244/9, in E-flat major at Ferguson Hall, UMN</p>
+  <p style="font-size: 16px; color: #555; margin-top: 10px;">Hungarian Rhapsody No. 9, S.244/9, in E-flat major at Ferguson Hall, UMN</p>
 </div>

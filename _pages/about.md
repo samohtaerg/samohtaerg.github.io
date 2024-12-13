@@ -31,7 +31,7 @@ More details in the Research section.
 
 Some more about me
 ======
-I sometimes blog/write about topics that catch my interest, like the geometry of physics—exploring the least action principle, path integrals, and variational approaches. I’ve also written about math concepts like Riemannian geometry and how tropical geometry ties into neural network architectures like ReLU. Recently, I’ve been working on reproducing GPT-2 from scratch, following Andrej Karpathy’s YouTube Video.
+I sometimes blog about topics that catch my interest, such as Mathematical Physics—the least action principle, quantum mechanics and path integrals, and variational approaches. I have also written about mathematical concepts like Riemannian geometry and how tropical geometry connects to neural network architectures like ReLU. Recently, I’ve been trying to reproduce GPT-2 from scratch, following Andrej Karpathy’s YouTube Video.
 
 I spent a lot of time playing piano when I was younger. Now I make music across genres in my free time, from fugues and waltz to dark synth and melodic dubstep. I also love modding games like Skyrim, Cyberpunk 2077, and Overwatch. Right now, I’m training in boxing; the goal is to compete in The Golden Gloves by 2026. 
 

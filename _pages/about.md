@@ -27,7 +27,7 @@ I focus on practical problems. My goal is to develop theories that not only prov
 
 **Keywords**: Machine Learning, Statistical Learning Theory, Deep Learning Theory, Nonparametric Methods, High-Dimensional Statistics, Image Processing (Medical Images), Biomedical Data
 
-More details in the Research section url: /publications/
+More details in the Research section.
 
 Miscellaneous
 ======

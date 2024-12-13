@@ -1,14 +1,13 @@
 ---
 title: 'What does "Geometry" even mean when we talk about Riemannian Geometry: From Orthogonal Frames to Differential Forms'
-date: 2021-7-16
-permalink: /posts/2024/12/riemannian-geometry-and-differential-forms/
+date: 2022-4-16
+permalink: /posts/2022/04/riemannian-geometry-and-differential-forms/
 tags:
   - Riemannian Geometry
   - Differential Forms
   - Exterior Calculus
 ---
 ### **Why Riemannian Geometry Feels Tedious**
-
 If you’ve ever opened a textbook on Riemannian geometry, you’ve probably felt buried under a sea of indices. They’re everywhere—defining metrics, summing over components, and transforming coordinates. But here’s the truth: those indices are your friends. They’re like GPS coordinates for navigating curved spaces, giving you the tools to describe geometry locally, no matter how twisted your coordinates might be.
 
 And here’s the trick: when we move to **orthogonal frames** (or orthonormal bases), the indices simplify. This makes the abstract math feel as intuitive as walking down a straight road. That’s why orthogonal frames are so fundamental—they let us translate the messy world of components into the clean language of geometry.

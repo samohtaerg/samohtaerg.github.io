@@ -15,7 +15,7 @@ permalink: /miscellaneous/
 <div style="width: 85%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
   <!-- Video 1 -->
   <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center; aspect-ratio: 16/9;">
-    <video width="100%" height="auto" controls style="border: none; border-radius: 8px;">
+    <video width="100%" height="100%" controls style="border: none; border-radius: 8px; object-fit: cover;">
       <source src="https://www.dropbox.com/scl/fi/czcth4psvu9l4gf43l7nu/jinglebells2021.mp4?rlkey=3nr2grnr5ds7drk1g1ev2anbd&st=19amcud0&raw=1" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -24,7 +24,7 @@ permalink: /miscellaneous/
 
   <!-- Video 2 -->
   <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center; aspect-ratio: 16/9;">
-    <video width="100%" height="auto" controls style="border: none; border-radius: 8px;">
+    <video width="100%" height="100%" controls style="border: none; border-radius: 8px; object-fit: cover;">
       <source src="https://www.dropbox.com/scl/fi/q3ofsu8dog3t31mwbq0nq/2022-Jingle-Bells.mp4?rlkey=849qhdc7jhfn18sehbli418dx&st=6b10w0s8&raw=1" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -33,7 +33,7 @@ permalink: /miscellaneous/
 
   <!-- Video 3 -->
   <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center; aspect-ratio: 16/9;">
-    <video width="100%" height="auto" controls style="border: none; border-radius: 8px;">
+    <video width="100%" height="100%" controls style="border: none; border-radius: 8px; object-fit: cover;">
       <source src="https://www.dropbox.com/scl/fi/s64sesp5iz6oslgdscwln/Jingle-Bells-2023.mp4?rlkey=lwicc6aujx1b7niwh3osfdx8d&st=o56pbclo&raw=1" type="video/mp4">
       Your browser does not support the video tag.
     </video>

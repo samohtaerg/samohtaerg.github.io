@@ -23,7 +23,7 @@ Each year, a new genre, tied to the moment's obsession. First, a Fugue. Then, Bo
     <source src="https://www.dropbox.com/scl/fi/q3ofsu8dog3t31mwbq0nq/2022-Jingle-Bells.mp4?rlkey=849qhdc7jhfn18sehbli418dx&st=6b10w0s8&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Jingle Bells 2022(Bossa Nova Jazz)</p>
+  <p style="font-size: 16px; margin-top: 20px; color: #333;">Jingle Bells 2022 (Bossa Nova Jazz)</p>
 </div>
 
 
@@ -32,7 +32,7 @@ Each year, a new genre, tied to the moment's obsession. First, a Fugue. Then, Bo
     <source src="https://www.dropbox.com/scl/fi/s64sesp5iz6oslgdscwln/Jingle-Bells-2023.mp4?rlkey=lwicc6aujx1b7niwh3osfdx8d&st=o56pbclo&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Jingle Bells 2023(Waltz)</p>
+  <p style="font-size: 16px; margin-top: 20px; color: #333;">Jingle Bells 2023 (Waltz)</p>
 </div>
 
 ## Melodic Dubstep
@@ -50,7 +50,7 @@ Each year, a new genre, tied to the moment's obsession. First, a Fugue. Then, Bo
     <source src="https://www.dropbox.com/scl/fi/hgqka6aot9vsi3or1wizk/Hungarian-Rhapsody.mp4?rlkey=28xzpgbnk6xvnzrf605t9bfuu&st=5s4w9hy3&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">### Hungarian Rhapsody</p>
+  <p style="font-size: 16px; margin-top: 20px; color: #333;">Hungarian Rhapsody No. 9, S.244/9, in E-flat major</p>
 </div>
 
 
@@ -60,5 +60,5 @@ Each year, a new genre, tied to the moment's obsession. First, a Fugue. Then, Bo
     <source src="https://www.dropbox.com/scl/fi/t876t2qfa852kiowbs5xg/vibe.mp4?rlkey=ei0o4t88j4knnx1t3vd0tcpnm&st=zntsi6su&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">### Vibe</p>
+  <p style="font-size: 16px; margin-top: 20px; color: #333;">Vibin'</p>
 </div>

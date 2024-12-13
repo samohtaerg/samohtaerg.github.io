@@ -36,7 +36,7 @@ permalink: /miscellaneous/
   <p style="font-size: 16px; color: #555; margin-top: 10px; text-align: center;">Jingle Bells 2023 (Waltz)</p>
 </div>
 
-## Electronic
+ <h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Electronics</h2>
 <div style="max-width: 800px; margin: 40px auto; background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
   <video width="100%" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/9ee52b76sj6i08ilcbn73/melodic-dubstep.mp4?rlkey=8jkckkk31qildkf1cq78krwiu&st=n8s08hz0&raw=1" type="video/mp4">
@@ -61,7 +61,7 @@ permalink: /miscellaneous/
   <p style="font-size: 16px; color: #555; margin-top: 10px; text-align: center;">Vibin'</p>
 </div>
 
-## Piano
+<h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Piano</h2> 
 <div style="max-width: 800px; margin: 40px auto; background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
   <video width="100%" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/hgqka6aot9vsi3or1wizk/Hungarian-Rhapsody.mp4?rlkey=28xzpgbnk6xvnzrf605t9bfuu&st=5s4w9hy3&raw=1" type="video/mp4">

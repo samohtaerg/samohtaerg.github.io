@@ -53,6 +53,14 @@ permalink: /miscellaneous/
   <p style="font-size: 16px; color: #555; margin-top: 10px; text-align: center;">Darksynth</p>
 </div>
 
+<div style="max-width: 800px; margin: 40px auto; background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
+  <video width="100%" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <source src="https://www.dropbox.com/scl/fi/t876t2qfa852kiowbs5xg/vibe.mp4?rlkey=ei0o4t88j4knnx1t3vd0tcpnm&st=zntsi6su&raw=1" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p style="font-size: 16px; color: #555; margin-top: 10px; text-align: center;">Vibin'</p>
+</div>
+
 ## Piano
 <div style="max-width: 800px; margin: 40px auto; background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
   <video width="100%" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">

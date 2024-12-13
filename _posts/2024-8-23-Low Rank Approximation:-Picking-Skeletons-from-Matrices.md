@@ -1,7 +1,7 @@
 ---
-title: 'Column-Pivoted QR: Picking Skeletons from Matrices'
+title: 'Low Rank Approximation: Picking Skeletons from Matrices'
 date: 2024-8-23
-permalink: /posts/2024/8/QR-Decomposition-Skeletons/
+permalink: /posts/2024/8/Low-Rank-Approximation-Skeletons/
 tags:
   - QR Decomposition
   - Interpolative Decomposition
@@ -18,7 +18,10 @@ You might not have heard much about ID—it’s not a buzzword like SVD. Even Wi
 
 To set the stage, let’s recall that low-rank approximations are all about simplifying matrices while keeping their essential structure. Mathematically, it boils down to minimizing the approximation error:
 
-$$\min_{\text{rank}(M') \leq r} \| M' - M \|_F^2.$$
+$$
+\min_{\text{rank}(M') \leq r} \| M' - M \|_F^2.
+$$
+
 For example:
 - With no extra constraints, the SVD gives the optimal solution.
 - If one factor of $$M \approx AB$$ is fixed, the pseudoinverse solves for the other.
@@ -31,17 +34,26 @@ where $$C$$ consists of a few chosen columns of $$M$$, and $$Z$$ is a flexible m
 
 Formally, ID tries to solve:
 
-$$\min_{S, Z} \| M[:, S] Z - M \|_F^2, \quad \text{s.t. } S \subset \{0, 1, \dots, m-1\}, \ |S| = r, \ Z \in \mathbb{R}^{r \times m}.$$
+$$
+\min_{S, Z} \| M[:, S] Z - M \|_F^2, \quad \text{s.t. } S \subset \{0, 1, \dots, m-1\}, \ |S| = r, \ Z \in \mathbb{R}^{r \times m}.
+$$
+
 Here, $$S$$ is the set of selected column indices, and $$Z$$ maps these columns back to $$M$$. While solving for $$Z$$ given $$C$$ is straightforward (just use the pseudoinverse, $$C^\dagger M$$), choosing the optimal $$S$$ is a combinatorial problem and notoriously NP-hard. Most algorithms aim for good approximations rather than exact solutions.
 
 ### The Geometry of ID
 
 To understand ID’s intuition, let’s look at its geometry. Imagine $$C$$ as a collection of column vectors:
 
-$$C = [c_1, c_2, \dots, c_r].$$
+$$
+C = [c_1, c_2, \dots, c_r].
+$$
+
 For any coefficient vector $$z = [z_1, z_2, \dots, z_r]^\top$$, the product $$Cz$$ is just a linear combination of these columns:
 
-$$Cz = \sum_{i=1}^r z_i c_i.$$
+$$
+Cz = \sum_{i=1}^r z_i c_i.
+$$
+
 ID essentially picks a few columns of $$M$$ to serve as a basis for reconstructing the rest. That’s where the "interpolative" in its name comes from—it’s about interpolation. Some stricter definitions impose bounds like $$|z_{i,j}| \leq 1$$ to ensure tight control over interpolation, but this constraint makes the problem even harder (still NP-hard!). Many practical algorithms relax this to $$|z_{i,j}| \leq 2$$, which works surprisingly well in most cases.
 
 ### Solving ID with QR
@@ -52,11 +64,17 @@ A classic deterministic method involves QR decomposition with column pivoting (o
 
 The column-pivoted QR algorithm tweaks the order of orthogonalization. Instead of processing columns sequentially, it picks the one with the largest residual error at each step:
 
-$$q_1 = \frac{m_{\rho_1}}{\|m_{\rho_1}\|}, \quad 
-q_k = \frac{m_{\rho_k} - \sum_{j=1}^{k-1} (m_{\rho_k}^\top q_j) q_j}{\| \cdots \|}.$$
+$$
+q_1 = \frac{m_{\rho_1}}{\|m_{\rho_1}\|}, \quad 
+q_k = \frac{m_{\rho_k} - \sum_{j=1}^{k-1} (m_{\rho_k}^\top q_j) q_j}{\| \cdots \|}.
+
+$$
 This ensures the algorithm focuses on the most "important" columns first, and the final result approximates $$M$$ as:
 
-$$M \approx QR,$$
+$$
+M \approx QR,
+$$
+
 where $$Q$$ is orthogonal, and $$R$$ is upper triangular. The selected columns correspond to $$Q[:, :r] R[:r, :r]$$, giving us $$C$$ and $$Z$$.
 
 ### Randomized Approaches

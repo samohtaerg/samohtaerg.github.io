@@ -4,7 +4,7 @@ title: Miscellaneous
 permalink: /miscellaneous/
 ---
 
-# Miscellaneous
+# Jingle Bells Serius
 
 ### Jingle Bells 2023
 

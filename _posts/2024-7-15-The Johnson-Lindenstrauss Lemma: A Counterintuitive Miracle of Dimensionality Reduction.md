@@ -1,6 +1,6 @@
 ---
 title: 'The Johnson-Lindenstrauss Lemma: A Counterintuitive Miracle of Dimensionality Reduction'
-date: 2024-7-15
+date: 2024-9-15
 permalink: /posts/2024/7/Johnson-Lindenstrauss/
 tags:
   - Johnson-Lindenstrauss
@@ -79,7 +79,6 @@ $$
 P(x \geq a) \leq \min_{\lambda > 0} e^{-\lambda a} \mathbb{E}[e^{\lambda x}].
 $$
 
----
 
 ### The Foundation: Unit Norm Lemma
 
@@ -93,21 +92,19 @@ This lemma forms the backbone of the JL Lemma:
 
 This says that for sufficiently large $$n$$, the length of $$u$$ (its $$\ell_2$$-norm) will almost always be close to 1. The probability of deviation shrinks exponentially fast with $$n$$.
 
----
 
 ### Proof of the Unit Norm Lemma
 
-We use the **Cramér-Chernoff method** here. Decompose $$|\|u\|_2^2 - 1| \geq \epsilon$$ into two cases: $$\|u\|_2^2 - 1 \geq \epsilon$$ or $$1 - \|u\|_2^2 \geq \epsilon$$. Focus on the first case:  
-
+We use the **Cramér-Chernoff method** here. Decompose $$|\|u\|_2^2 - 1| \geq \epsilon$$ into two cases: $$\|u\|_2^2 - 1 \geq \epsilon$$ or $$1 - \|u\|_2^2 \geq \epsilon$$. Focus on the first case,  
 
 $$
-\P(\|u\|_2^2 - 1 \geq \epsilon) \leq \min_{\lambda > 0} e^{-\lambda(\epsilon + 1)} \mathbb{E}[e^{\lambda \|u\|_2^2}]
+\mathbb{P}\big(\|u\|_2^2 - 1 \geq \epsilon\big) \leq \min_{\lambda > 0} e^{-\lambda (\epsilon + 1)} \mathbb{E}\big[e^{\lambda \|u\|_2^2}\big]
 $$
 
 Since $$u$$ is sampled from $$\mathcal{N}(0, 1/n)$$, each component $$u_i$$ is independent, and we can write:  
 
 $$
-\mathbb{E}[e^{\lambda \|u\|_2^2}] = \prod_{i=1}^n \mathbb{E}[e^{\lambda u_i^2}] = \left(\mathbb{E}[e^{\lambda u_1^2}]\right)^n.
+\mathbb{E}[e^{\lambda \|u\|_2^2}] = \prod_{i=1}^{n} \mathbb{E}[e^{\lambda u_i^2}] = \left(\mathbb{E}[e^{\lambda u_1^2}]\right)^n.
 $$
 
 For Gaussian $$u_i$$, it’s straightforward to compute:  
@@ -118,7 +115,6 @@ $$
 
 Plugging this back and minimizing gives the desired bound. The rest of the proof follows similarly for the second case.
 
----
 
 ### Putting It Together: The JL Lemma
 
@@ -133,8 +129,6 @@ Finally, let’s formalize the JL Lemma:
 > for all $$i \neq j$$.
 
 In short, we can squish $$N$$ vectors into $$O(\log N)$$ dimensions while approximately preserving their pairwise distances. The proof combines the Unit Norm Lemma with basic properties of random projections.
-
----
 
 ### Why This Matters
 

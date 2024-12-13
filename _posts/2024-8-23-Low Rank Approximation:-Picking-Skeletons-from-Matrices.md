@@ -41,7 +41,6 @@ $$
 Here, $$S$$ is the set of selected column indices, and $$Z$$ maps these columns back to $$M$$. While solving for $$Z$$ given $$C$$ is straightforward (just use the pseudoinverse, $$C^\dagger M$$), choosing the optimal $$S$$ is a combinatorial problem and notoriously NP-hard. Most algorithms aim for good approximations rather than exact solutions.
 
 ### The Geometry of ID
-
 To understand ID’s intuition, let’s look at its geometry. Imagine $$C$$ as a collection of column vectors:
 
 $$
@@ -57,7 +56,6 @@ $$
 ID essentially picks a few columns of $$M$$ to serve as a basis for reconstructing the rest. That’s where the "interpolative" in its name comes from—it’s about interpolation. Some stricter definitions impose bounds like $$|z_{i,j}| \leq 1$$ to ensure tight control over interpolation, but this constraint makes the problem even harder (still NP-hard!). Many practical algorithms relax this to $$|z_{i,j}| \leq 2$$, which works surprisingly well in most cases.
 
 ### Solving ID with QR
-
 There are two main approaches to solving ID: deterministic and randomized algorithms. Deterministic ones are more accurate but computationally heavy, while randomized ones trade off some precision for speed.
 
 A classic deterministic method involves QR decomposition with column pivoting (often translated as "column-pivoted QR" or simply "column-driven QR"). Why QR? Well, it connects naturally to ID’s geometry. When $$C$$ is fixed, $$Z = C^\dagger M$$ minimizes the error. Geometrically, this projects each column of $$M$$ onto the subspace spanned by $$c_1, c_2, \dots, c_r$$. Gram-Schmidt orthogonalization is a straightforward way to achieve this, and it’s at the heart of QR decomposition.
@@ -78,11 +76,9 @@ $$
 where $$Q$$ is orthogonal, and $$R$$ is upper triangular. The selected columns correspond to $$Q[:, :r] R[:r, :r]$$, giving us $$C$$ and $$Z$$.
 
 ### Randomized Approaches
-
 Randomized algorithms aim to speed things up by reducing the matrix’s size. For example, instead of working on the full $$M$$, they project its columns into a lower-dimensional space using techniques like the Johnson-Lindenstrauss lemma. One popular approach uses the Subsampled Randomized Fourier Transform (SRFT) to achieve this efficiently. Alternatively, some methods randomly sample $$k > r$$ columns from $$M$$ and then apply column-pivoted QR to these.
 
 ### Practical Use and SciPy
-
 The deterministic column-pivoted QR algorithm is what SciPy implements by default (`rand=False` in `scipy.linalg.interpolative`). While it doesn’t strictly enforce bounds like $$|z_{i,j}| \leq 1$$, empirical evidence shows it performs well enough in practice. Randomized methods, on the other hand, are also available and shine when dealing with massive matrices.
 
 In short, ID strikes a balance between simplicity, interpretability, and efficiency, making it a powerful tool in the low-rank approximation toolbox.

@@ -1,5 +1,5 @@
 ---
-title: 'Geometric Structure in Score-Based Diffusion Models'
+title: 'Low Dimensional Geometric Structure in Score-Based Diffusion Models'
 date: 2024-7-1
 permalink: /posts/2024/11/Understanding Score-Based Diffusion Models/
 tags:

@@ -8,7 +8,7 @@ tags:
   - Probability Inequalities
 ---
 
-Let’s dive into the **Johnson-Lindenstrauss Lemma**, or as we’ll call it to save breath, the **JL Lemma**. This is one of those magical results that every computer scientist should know. It’s a famous theorem about dimensionality reduction and a prime example of the counterintuitive nature of high-dimensional spaces—what people sometimes call the “curse of dimensionality.” In fact, the JL Lemma underpins many machine learning techniques like dimensionality reduction and hashing. It also provides theoretical support for understanding and tuning dimensional parameters in modern models. Pretty neat, huh?
+Let’s dive into the **Johnson-Lindenstrauss Lemma**, or as we’ll call it to save breath, the **JL Lemma**. This is one of those magical results about dimensionality reduction and a prime example of the counterintuitive nature of high-dimensional spaces—what people sometimes call the “curse of dimensionality.” In fact, the JL Lemma underpins many machine learning techniques like dimensionality reduction and hashing. It also provides theoretical support for understanding and tuning dimensional parameters in modern models. Pretty neat, huh?
 
 ---
 

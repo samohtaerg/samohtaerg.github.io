@@ -1,6 +1,6 @@
 ---
 title: 'Exterior Calculus: Supercharging Differential Geometry'
-date: 2021-07-19
+date: 2022-07-19
 permalink: /posts/2024/12/exterior-calculus/
 tags:
   - Exterior Calculus

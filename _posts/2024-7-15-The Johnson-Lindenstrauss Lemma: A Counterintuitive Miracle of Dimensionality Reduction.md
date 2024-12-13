@@ -56,7 +56,6 @@ $$
 $$
 
 ### Chebyshev Inequality
-
 If $$x$$ isn’t non-negative, we can tweak things. For instance, \(|x - \mathbb{E}[x]|\) is always non-negative. Applying Markov’s inequality to $$(x - \mathbb{E}[x])^2$$, we get the **Chebyshev Inequality**:
 
 $$
@@ -65,7 +64,7 @@ $$
 
 ### Cramér-Chernoff Method
 
-Another useful tool is the **Cramér-Chernoff method**, which transforms any random variable into a non-negative one using an exponential function. For any \$$lambda > 0$$, we have:
+Another useful tool is the **Cramér-Chernoff method**, which transforms any random variable into a non-negative one using an exponential function. For any $$\lambda > 0$$, we have:
 
 $$
 x \geq a \implies \lambda x \geq \lambda a \implies e^{\lambda x} \geq e^{\lambda a}.

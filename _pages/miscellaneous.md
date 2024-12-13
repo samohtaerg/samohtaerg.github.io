@@ -36,6 +36,7 @@ permalink: /miscellaneous/
   <p style="font-size: 16px; color: #555; margin-top: 10px; text-align: center;">Jingle Bells 2023 (Waltz)</p>
 </div>
 
+<div style="text-align: center;">
  <h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Electronics</h2>
 <div style="max-width: 800px; margin: 40px auto; background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
   <video width="100%" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
@@ -61,6 +62,7 @@ permalink: /miscellaneous/
   <p style="font-size: 16px; color: #555; margin-top: 10px; text-align: center;">Vibin'</p>
 </div>
 
+<div style="text-align: center;">
 <h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Piano</h2> 
 <div style="max-width: 800px; margin: 40px auto; background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
   <video width="100%" controls style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">

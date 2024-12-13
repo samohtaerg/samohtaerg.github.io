@@ -8,7 +8,6 @@ tags:
   - do Carmo
 ---
 
-
 ### **What Is a Riemannian Metric?**
 
 Geometry—what comes to mind? If you’re thinking “measuring the Earth,” you’re spot on! The word "geometry" originates from "Earth measurement." To measure, you need a reference frame and a way to compute distances.

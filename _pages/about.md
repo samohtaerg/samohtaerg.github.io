@@ -23,7 +23,7 @@ Inspired by John Tukey’s remark:
 
 > *“An approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem.”*
 
-I focus on practical problems. My goal is to develop theories that not only provide deep insights but are also applicable to large-scale, real-world datasets.
+I focus on practical problems. My goal is to develop theories that not only provide insights and rigor but are also applicable to large-scale, real-world datasets.
 
 **Keywords**: Machine Learning, Statistical Learning Theory, Deep Learning Theory, Nonparametric Methods, High-Dimensional Statistics, Image Processing (Medical Images), Biomedical Data
 
@@ -31,7 +31,7 @@ More details in the Research section.
 
 Some more about me
 ======
-I sometimes blog/write about topics that catch my interest, like the geometry of physics—exploring the least action principle, path integrals, and variational approaches. I’ve also written about math concepts like p-adic modular forms and how tropical geometry ties into neural networks like ReLU. Recently, I’ve been working on reproducing GPT-2 from scratch, following Andrej Karpathy’s tutorials.
+I sometimes blog/write about topics that catch my interest, like the geometry of physics—exploring the least action principle, path integrals, and variational approaches. I’ve also written about math concepts like Riemannian geometry and how tropical geometry ties into neural network architectures like ReLU. Recently, I’ve been working on reproducing GPT-2 from scratch, following Andrej Karpathy’s YouTube Video.
 
 I spent a lot of time playing piano when I was younger. Now I make music across genres in my free time, from fugues and waltz to dark synth and melodic dubstep. I also love modding games like Skyrim, Cyberpunk 2077, and Overwatch. Right now, I’m training in boxing; the goal is to compete in The Golden Gloves by 2026. 
 

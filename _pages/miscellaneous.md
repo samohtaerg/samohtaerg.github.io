@@ -41,7 +41,7 @@ permalink: /miscellaneous/
   </div>
 </div>
 <div style="text-align: center; margin: 40px auto;">
-  <h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Electronics</h2>
+  <h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Electronic</h2>
   <div style="width: 70%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
     <!-- Video 4 -->
     <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
@@ -63,10 +63,21 @@ permalink: /miscellaneous/
   </div>
 </div>
 
+  <!-- Video 6 -->
+  <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+      <video width="100%" controls style="border: none; border-radius: 8px;">
+        <source src="https://www.dropbox.com/scl/fi/t876t2qfa852kiowbs5xg/vibe.mp4?rlkey=ei0o4t88j4knnx1t3vd0tcpnm&st=iy3i4b8g&raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p style="font-size: 14px; color: #555; margin-top: 10px; text-align: center;">Vibin'</p>
+    </div>
+  </div>
+</div>
+
 <div style="text-align: center; margin: 40px auto;">
   <h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Piano</h2>
   <div style="width: 70%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-    <!-- Video 6 -->
+    <!-- Video 7 -->
     <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
       <video width="100%" controls style="border: none; border-radius: 8px;">
         <source src="https://www.dropbox.com/scl/fi/hgqka6aot9vsi3or1wizk/Hungarian-Rhapsody.mp4?rlkey=28xzpgbnk6xvnzrf605t9bfuu&st=5s4w9hy3&raw=1" type="video/mp4">

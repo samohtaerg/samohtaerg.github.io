@@ -12,7 +12,7 @@ permalink: /miscellaneous/
   </p>
 </div>
 
-<div style="width: 85%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+<div style="width: 70%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
   <!-- Video 1 -->
   <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
     <video width="100%" controls style="border: none; border-radius: 8px;">
@@ -43,7 +43,7 @@ permalink: /miscellaneous/
 
 <div style="text-align: center; margin: 40px auto;">
   <h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Electronics</h2>
-  <div style="width: 85%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+  <div style="width: 70%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
     <!-- Video 4 -->
     <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
       <video width="100%" controls style="border: none; border-radius: 8px;">
@@ -66,7 +66,7 @@ permalink: /miscellaneous/
 
 <div style="text-align: center; margin: 40px auto;">
   <h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Piano</h2>
-  <div style="width: 85%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+  <div style="width: 70%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
     <!-- Video 6 -->
     <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
       <video width="100%" controls style="border: none; border-radius: 8px;">

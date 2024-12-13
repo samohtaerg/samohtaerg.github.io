@@ -42,13 +42,11 @@ Here, $$S$$ is the set of selected column indices, and $$Z$$ maps these columns 
 
 ### The Geometry of ID
 To understand ID’s intuition, let’s look at its geometry. Imagine $$C$$ as a collection of column vectors:
-
 $$
 C = [c_1, c_2, \dots, c_r].
 $$
 
 For any coefficient vector $$z = [z_1, z_2, \dots, z_r]^\top$$, the product $$Cz$$ is just a linear combination of these columns:
-
 $$
 Cz = \sum_{i=1}^r z_i c_i.
 $$
@@ -65,8 +63,8 @@ The column-pivoted QR algorithm tweaks the order of orthogonalization. Instead o
 $$
 q_1 = \frac{m_{\rho_1}}{\|m_{\rho_1}\|}, \quad 
 q_k = \frac{m_{\rho_k} - \sum_{j=1}^{k-1} (m_{\rho_k}^\top q_j) q_j}{\| \cdots \|}.
-
 $$
+
 This ensures the algorithm focuses on the most "important" columns first, and the final result approximates $$M$$ as:
 
 $$

@@ -35,39 +35,36 @@ Each year, a new genre, tied to the moment's obsession. First, a Fugue. Then, Bo
   <p style="font-size: 16px; margin-top: 20px; color: #333;">Jingle Bells 2023 (Waltz)</p>
 </div>
 
-## Melodic Dubstep
+## Electronic 
 <div style="text-align: center; margin: 40px 0;">
   <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/9ee52b76sj6i08ilcbn73/melodic-dubstep.mp4?rlkey=8jkckkk31qildkf1cq78krwiu&st=n8s08hz0&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Melodic Dubstep version of a meme song</p>
+  <p style="font-size: 16px; margin-top: 20px; color: #333;">Melodic Dubstep</p>
 </div>
 
-## Dark Synth
 <div style="text-align: center; margin: 40px 0;">
   <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    <source src="[https://www.dropbox.com/scl/fi/9ee52b76sj6i08ilcbn73/melodic-dubstep.mp4?rlkey=8jkckkk31qildkf1cq78krwiu&st=n8s08hz0&raw=1](https://www.dropbox.com/scl/fi/r5yqfowtnoqmfhbfkxhc1/darksynth.mp4?rlkey=s6r9vrlscn1v0uaocjon6bq5a&st=cc6yuz1t&raw=1)" type="video/mp4">
+    <source src="https://www.dropbox.com/scl/fi/r5yqfowtnoqmfhbfkxhc1/darksynth.mp4?rlkey=s6r9vrlscn1v0uaocjon6bq5a&st=cc6yuz1t&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Dark Synth</p>
+  <p style="font-size: 16px; margin-top: 20px; color: #333;">Darksynth</p>
 </div>
 
-## Me playing the Liszt Hungarian Rhapsody No.9 at UMN Ferguson Hall
-<div style="text-align: center; margin: 40px 0;">
-  <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    <source src="https://www.dropbox.com/scl/fi/hgqka6aot9vsi3or1wizk/Hungarian-Rhapsody.mp4?rlkey=28xzpgbnk6xvnzrf605t9bfuu&st=5s4w9hy3&raw=1" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p style="font-size: 16px; margin-top: 20px; color: #333;">Hungarian Rhapsody No. 9, S.244/9, in E-flat major</p>
-</div>
-
-
-## A beat with really good vibe
 <div style="text-align: center; margin: 40px 0;">
   <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
     <source src="https://www.dropbox.com/scl/fi/t876t2qfa852kiowbs5xg/vibe.mp4?rlkey=ei0o4t88j4knnx1t3vd0tcpnm&st=zntsi6su&raw=1" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <p style="font-size: 16px; margin-top: 20px; color: #333;">Vibin'</p>
+</div>
+
+## Piano
+<div style="text-align: center; margin: 40px 0;">
+  <video width="640" height="360" controls style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <source src="https://www.dropbox.com/scl/fi/hgqka6aot9vsi3or1wizk/Hungarian-Rhapsody.mp4?rlkey=28xzpgbnk6xvnzrf605t9bfuu&st=5s4w9hy3&raw=1" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p style="font-size: 16px; margin-top: 20px; color: #333;">Hungarian Rhapsody No. 9, S.244/9, in E-flat major at Ferguson Hall, UMN</p>
 </div>

@@ -29,11 +29,11 @@ I focus on practical problems. My goal is to develop theories that not only prov
 
 More details in the Research section.
 
-Miscellaneous
+Some more about me
 ======
 I sometimes blog/write about topics that catch my interest, like the geometry of physics—exploring the least action principle, path integrals, and variational approaches. I’ve also written about math concepts like p-adic modular forms and how tropical geometry ties into neural networks like ReLU. Recently, I’ve been working on reproducing GPT-2 from scratch, following Andrej Karpathy’s tutorials.
 
-In my free time, I make music across genres, from fugues, waltz to dark synth and melodic dubstep. I also love modding games like Skyrim, Cyberpunk 2077, and Overwatch. Right now, I’m training in boxing; the goal is to compete in The Golden Gloves by 2026. 
+I spent a lot of time playing piano when I was younger. Now I make music across genres in my free time, from fugues and waltz to dark synth and melodic dubstep. I also love modding games like Skyrim, Cyberpunk 2077, and Overwatch. Right now, I’m training in boxing; the goal is to compete in The Golden Gloves by 2026. 
 
 When it comes to reading, my favorites are Hegel, Žižek, Merleau-Ponty, Deleuze, Lacan, Eros, etc. My last failed attempt was to work through Hegel’s *The Philosophy of History* and *Lectures on the History of Philosophy* at the same time.
 

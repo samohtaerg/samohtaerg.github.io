@@ -41,27 +41,31 @@ These results aren’t just fun facts; they’re closely related to the JL Lemma
 
 ### Probability Inequalities: The Tools We Need
 
-Let’s start with the **Markov Inequality**:
+### Markov Inequality
 
-> If $$x$$ is a non-negative random variable and $$a > 0$$, then:
-> 
-> $$
-> P(x \geq a) \leq \frac{\mathbb{E}[x]}{a}.
-> $$
+If $$x$$ is a non-negative random variable and $$a > 0$$, then:
 
-No fancy assumptions about the distribution of $$x$$—it just needs to be non-negative. Why does this work? The proof is simple:  
+$$
+P(x \geq a) \leq \frac{\mathbb{E}[x]}{a}.
+$$
+
+This result doesn’t require any fancy assumptions about the distribution of $$x$$ -- it just needs to be non-negative. The proof is simple:
 
 $$
 \mathbb{E}[x] = \int_0^\infty x p(x) dx \geq \int_a^\infty x p(x) dx \geq \int_a^\infty a p(x) dx = a P(x \geq a).
 $$
 
-Now, if $$x$$ isn’t non-negative, we can tweak things. For instance, $$|x - \mathbb{E}[x]|$$ is always non-negative, so applying Markov gives the **Chebyshev Inequality**:  
+### Chebyshev Inequality
+
+If $$x$$ isn’t non-negative, we can tweak things. For instance, \(|x - \mathbb{E}[x]|\) is always non-negative. Applying Markov’s inequality to $$(x - \mathbb{E}[x])^2$$, we get the **Chebyshev Inequality**:
 
 $$
 P(|x - \mathbb{E}[x]| \geq a) = P((x - \mathbb{E}[x])^2 \geq a^2) \leq \frac{\text{Var}[x]}{a^2}.
 $$
 
-Another tool we’ll need is the **Cramér-Chernoff method**. This trick turns any random variable into a non-negative one using an exponential function. For any $$\lambda > 0$$:  
+### Cramér-Chernoff Method
+
+Another useful tool is the **Cramér-Chernoff method**, which transforms any random variable into a non-negative one using an exponential function. For any \$$lambda > 0$$, we have:
 
 $$
 x \geq a \implies \lambda x \geq \lambda a \implies e^{\lambda x} \geq e^{\lambda a}.
@@ -94,7 +98,6 @@ This says that for sufficiently large $$n$$, the length of $$u$$ (its $$\ell_2$$
 
 
 ### Proof of the Unit Norm Lemma
-
 We use the **Cramér-Chernoff method** here. Decompose $$|\|u\|_2^2 - 1| \geq \epsilon$$ into two cases: $$\|u\|_2^2 - 1 \geq \epsilon$$ or $$1 - \|u\|_2^2 \geq \epsilon$$. Focus on the first case,  
 
 $$

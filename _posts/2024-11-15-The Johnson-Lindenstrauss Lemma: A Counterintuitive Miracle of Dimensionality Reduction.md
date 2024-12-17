@@ -1,7 +1,7 @@
 ---
 title: 'The Johnson-Lindenstrauss Lemma: A Counterintuitive Miracle of Dimensionality Reduction'
-date: 2024-9-15
-permalink: /posts/2024/7/Johnson-Lindenstrauss/
+date: 2024-11-15
+permalink: /posts/2024/11/Johnson-Lindenstrauss/
 tags:
   - Johnson-Lindenstrauss
   - Dimensionality Reduction

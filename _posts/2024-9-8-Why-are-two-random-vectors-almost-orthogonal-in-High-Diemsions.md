@@ -1,7 +1,7 @@
 ---
 title: 'Why Are Two Random Vectors Almost Always Orthogonal in High Dimensions'
-date: 2024-11-18
-permalink: /posts/2024/11/Why Are Two Random Vectors Almost Orthogonal in High Dimensions/
+date: 2024-9-8
+permalink: /posts/2024/9/Why Are Two Random Vectors Almost Orthogonal in High Dimensions/
 tags:
   - High-Dimensional Geometry
   - Random Vectors

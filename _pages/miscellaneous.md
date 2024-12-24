@@ -41,6 +41,16 @@ permalink: /miscellaneous/
   </div>
 </div>
 
+  <!-- Video 3.5 -->
+  <div style="flex: 0 0 calc(30% - 20px); background: #f9f9f9; border: 1px solid #ddd; border-radius: 12px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; align-items: center; aspect-ratio: 16/9;">
+    <video width="100%" height="100%" controls style="border: none; border-radius: 8px; object-fit: cover;">
+      <source src="https://www.dropbox.com/scl/fi/txccu409pu9jdloq2qnpo/Fantasy-Medieval-Jingle-Bells.mp4?rlkey=8lj996op0zzfseygp9txdbv8t&st=wdq2pkvj&raw=1" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 14px; color: #555; margin-top: 10px; text-align: center;">Jingle Bells 2024 (Medieval Fantasy)</p>
+  </div>
+</div>
+
 <div style="text-align: center; margin: 40px auto;">
   <h2 style="font-size: 28px; font-weight: 600; margin: 20px auto; color: #333;">Electronic</h2>
   <div style="width: 85%; margin: 40px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">

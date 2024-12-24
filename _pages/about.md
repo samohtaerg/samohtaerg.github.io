@@ -10,7 +10,7 @@ Hello, I’m Aoran Chen; my friends call me Thomas.
 
 I got my Bachelor’s degree in Mathematics from the University of Minnesota Twin Cities, where I was advised by Prof. Max Engelstein. I then earned my Master’s degree in Biostatistics at NYU GPH, advised by Prof. Yang Feng.  
 
-I’m currently a research assistant at NYU GPH Feng Lab, working on topics in Machine Learning and High-Dimensional Statistics, and part of the SCALE Lab at Northwestern IEMS (previously NYU Courant). I like thinking about math/stats/ML, and generally anything else that interests me. Lately, I’ve been listening to The Elder Scrolls V: Skyrim OST a lot, and reading some notes on Galois Representations, modular forms, and Elliptic Curves (as a hobby).
+I’m currently a research assistant at NYU GPH Feng Lab, working on topics in Machine Learning and High-Dimensional Statistics, and part of the SCALE Lab at Northwestern IEMS (previously NYU Courant). I like thinking about math/stats/ML, and generally anything else that interests me. Lately, I've become a fan of Warhammer 40k and am reading Horus Rising by Dan Abnett. I also enjoy reading notes on Galois representations, modular forms, and elliptic curves (as a hobby).
 
 Oh, and I have ADD—keeps things interesting.  
 
